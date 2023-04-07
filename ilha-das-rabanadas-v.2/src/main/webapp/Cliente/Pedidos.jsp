@@ -48,25 +48,14 @@
             </a>
 
             <div class="col-md-3 text-center m-auto">
-                <img width="60%" src="<?php echo IMG ?>/img/logo-dashboards.webp" alt="">
+                <img width="60%" src="" alt="">
             </div>
         </header>
     </div>
     <h1 class="text-center">Meus pedidos</h1>
     <div class="table-responsive">
         <div class="container">
-            <?php
-
-            if (isset($this->datas["request"])) {
-                if ($_SESSION['endereco'] !== 'Nova Iguaçu') {
-                    echo ("<h5 class='text-danger'>Obs: você não está elegível para o nosso serviço de entregas!Por gentileza, retirar sua encomenda na nossa loja!</h5>");
-                }
-
-                include './app/Views/Cliente/meusPedidos.php';
-            } else {
-                include './app/Views/Cliente/semPedidos.php';
-            }
-            ?>
+           
         </div>
 
 

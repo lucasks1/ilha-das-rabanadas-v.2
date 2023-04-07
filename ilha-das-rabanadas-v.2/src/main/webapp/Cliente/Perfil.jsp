@@ -46,7 +46,7 @@
 
         <div class="col">
           <h5>Nome</h5>
-          <p><?php echo $nomeCliente . " " . $sobrenome ?></p>
+          <p></p>
         </div>
 
       </div>
@@ -54,13 +54,13 @@
 
         <div class="col-6">
           <h5>Telefone celular</h5>
-          <p><?php echo $numeroCliente; ?></p>
+          <p></p>
         </div>
       </div>
       <div class="mb-3 row">
         <div class="col-6">
           <h5>CEP</h5>
-          <p><?php echo $cep; ?></p>
+          <p></p>
         </div>
       </div>
 
@@ -68,11 +68,11 @@
       <div class="mb-4 row">
         <div class="col">
           <h5>Rua</h5>
-          <p><?php echo $rua; ?></p>
+          <p></p>
         </div>
         <div class="col">
           <h5>Número</h5>
-          <p><?php echo $numero; ?></p>
+          <p></p>
         </div>
       </div>
 
@@ -82,12 +82,12 @@
       <div class="mb-4 row">
         <div class="col">
           <h5>Bairro</h5>
-          <p><?php echo $bairro; ?></p>
+          <p></p>
         </div>
       </div>
       <div class="col">
         <h5>Cidade</h5>
-        <p><?php echo $cidade; ?></p>
+        <p></p>
       </div>
 
 

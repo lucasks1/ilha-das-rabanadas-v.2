@@ -22,14 +22,9 @@
     </thead>
     <tbody>
     
-       /*
-        <?php
+      
 
-
-        foreach ($this->datas["request"] as $data) {
-
-            extract($data);
-            echo (" <tr class=''>
+ <tr class=''>
             <td scope='row'> $idPedido</td>
             <td> $dataEntrega</td>
             <td> $hora</td>
@@ -90,13 +85,7 @@
         const myModalCancel = new bootstrap.Modal(document.getElementsById('cancel$idPedido'), options);
         const myModalEdit = new bootstrap.Modal(document.getElementsById('edit$idPedido'), options);
         </script>
-        ");
-        }
-
-
-        ?>
-
-             */
+        
     </tbody>
 </table>
 

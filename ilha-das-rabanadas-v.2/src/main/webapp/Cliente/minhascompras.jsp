@@ -86,53 +86,33 @@
     <!-- Bootstrap JavaScript Libraries -->
     
     
-    /*
-    <?php
 
-    include './app/Views/Headers/headerManager.php';
-    ?>
-   */
     <main class="my-5">
 
 
         <h1 class="text-center">Seu carrinho </h1>
         
         
-        /*
-        
-        
-        <?php if ($this->datas['myProducts'] == "false") {
-        
-        
-        ?>
-          
-         */ 
+      
            <div class="text-center">
                 <img src="<?php echo IMG; ?>/8.png" alt="imagem de nao há pedidos"></img>
                 <h4>Seu carrinho está vazio!</h4>
             </div>
 
-/*
-        <?php } else {
-            if (sizeof($this->datas['myProducts'][0]) != 0) {
-                foreach ($this->datas['myProducts'] as $myProducts) {
-                    extract($myProducts);
-                }
-            } ?>
-  */
+
             <section class="container  flex-column p-4">
                 <form action="../pedido/insert" method="POST">
-                    <input type="hidden" name="idCliente" value="<?php echo $idCliente; ?>">
-                    <input type="hidden" name="idProduto" value="<?php echo $idProduto; ?>">
+                    <input type="hidden" name="idCliente" value="">
+                    <input type="hidden" name="idProduto" value="">
                     <div class="card   mb-3">
                         <div class="row  align-items-center g-0">
                             <div class="col">
-                                <img src="<?php echo $imagem; ?> " class="" alt="..." height="100%" width="90%">
+                                <img src="" class="" alt="..." height="100%" width="90%">
                             </div>
                             <div class="col">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo $nomeProduto; ?></h5>
-                                    <p class="card-text">Valor:<span class="fw-bold" id="preco"> <?php echo $preco; ?></span>
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text">Valor:<span class="fw-bold" id="preco"></span>
                                     <div class="mb-3">
                                         <label class=" mb-2 form-label">
                                             <label>Quantidade</label>
@@ -142,7 +122,7 @@
                                     <div>
 
                                         <p>Total:</p>
-                                        <input type="text" value="<?php echo $preco; ?>" id="valorPedido" class="border-0" name="valorPedido" readonly>
+                                        <input type="text" value="" id="valorPedido" class="border-0" name="valorPedido" readonly>
                                     </div>
                                 </div>
                             </div>
@@ -177,21 +157,12 @@
                 </form>
 
             </section>
-        <?php
-        }
-        ?>
+       
     </main>
 
 
 
-/*
 
-    <?php
-    include FOOTER; 
-    
-    ?>
-    
-    */
     <script>
         const inputQuantidade = document.querySelector("#quantidadePedido");
         const precoElemento = document.querySelector("#preco");

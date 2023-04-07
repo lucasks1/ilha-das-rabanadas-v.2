@@ -1,15 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
        
-       /*
-<?php
-include "./app/config.php";
-
-
-foreach ($this->datas["informations"] as $data) {
-  extract($data);
-}
-?>
+  
 
       */
 <!doctype html>
@@ -45,7 +37,7 @@ foreach ($this->datas["informations"] as $data) {
       </a>
 
       <div class="col-md-3 text-center m-auto">
-        <img width="60%" src="<?php echo IMG ?>/img/logo-dashboards.webp" alt="">
+        <img width="60%" src="" alt="">
       </div>
     </header>
   </div>
@@ -54,7 +46,7 @@ foreach ($this->datas["informations"] as $data) {
   <div class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
     <h1 class="text-center">Atualizar</h1>
     <form action="update" method="POST" class="rounded">
-      <input type="hidden" name="idCliente" value="<?php echo $idCliente; ?>">
+      <input type="hidden" name="idCliente" value="">
       <div class="mb-4 row">
 
         <div class="col-6">
@@ -63,7 +55,7 @@ foreach ($this->datas["informations"] as $data) {
         </div>
         <div class="col-6">
           <label for="sobrenome" class="form-label">Sobrenome</label>
-          <input type="text" value="<?php echo $sobrenome; ?> " required name=" sobrenome" id="sobrenome" class="form-control" placeholder="" aria-describedby="helpId">
+          <input type="text" value=" " required name=" sobrenome" id="sobrenome" class="form-control" placeholder="" aria-describedby="helpId">
         </div>
 
       </div>
@@ -71,35 +63,35 @@ foreach ($this->datas["informations"] as $data) {
 
         <div class="col-6">
           <label for="numeroCelular" class="form-label">Telefone celular</label>
-          <input type="text" required name="numeroCelular" id="numeroCelular" value="<?php echo $numeroCliente; ?>" class=" form-control" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required="required">
+          <input type="text" required name="numeroCelular" id="numeroCelular" value="" class=" form-control" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required="required">
         </div>
       </div>
       <div class="mb-3 row">
         <div class="col-6">
           <label for="cep" class="form-label">Cep</label>
-          <input type="text" value="<?php echo $cep; ?>" required name=" cep" id="cep" class="form-control" placeholder="99999-999" aria-describedby="helpId" pattern="\d{5}-?\d{3}" maxlength="9">
+          <input type="text" value="" required name=" cep" id="cep" class="form-control" placeholder="99999-999" aria-describedby="helpId" pattern="\d{5}-?\d{3}" maxlength="9">
         </div>
       </div>
 
       <div class="mb-4 row">
         <div class="col-10">
           <label for="rua" class="form-label">Rua</label>
-          <input type="text" required name="rua" value="<?php echo $rua; ?>" id="logradouro" class="form-control" placeholder="" aria-describedby="helpId">
+          <input type="text" required name="rua" value="" id="logradouro" class="form-control" placeholder="" aria-describedby="helpId">
         </div>
         <div class="col">
           <label for="numero" class="form-label">Número</label>
-          <input type="text" value="<?php echo $numero; ?> " required name="numero" id="numero" class="form-control" placeholder="" aria-describedby="helpId">
+          <input type="text" value="" required name="numero" id="numero" class="form-control" placeholder="" aria-describedby="helpId">
 
         </div>
       </div>
       <div class="mb-4 row">
         <div class="col">
           <label for="bairro" class="form-label">Bairro</label>
-          <input type="text" required name="bairro" value="<?php echo $bairro; ?>" id="bairro" class="form-control" placeholder="" aria-describedby="helpId">
+          <input type="text" required name="bairro" value="" id="bairro" class="form-control" placeholder="" aria-describedby="helpId">
         </div>
         <div class="col">
           <label for="cidade" class="form-label">Cidade</label>
-          <input readonly value="Nova Iguaçu" name="cidade" id="localidade" value="<?php echo $cidade; ?>" class="form-control " placeholder="" aria-describedby="helpId">
+          <input readonly value="Nova Iguaçu" name="cidade" id="localidade" value="" class="form-control " placeholder="" aria-describedby="helpId">
         </div>
       </div>
 
