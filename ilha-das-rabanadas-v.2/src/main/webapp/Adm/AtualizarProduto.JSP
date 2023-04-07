@@ -21,6 +21,9 @@
    
    
    /*
+   
+   
+  
 <?php
 include "./app/config.php";
 
@@ -34,6 +37,7 @@ foreach ($this->datas['informations'] as $data) {
 ?>
 
    */
+   
 
 
 <body>
