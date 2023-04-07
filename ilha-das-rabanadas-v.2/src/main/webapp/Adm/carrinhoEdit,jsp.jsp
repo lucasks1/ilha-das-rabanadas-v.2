@@ -78,31 +78,6 @@
 </head>
 <body>
 
-
-
-/*
-<?php
-include "./app/config.php";
-date_default_timezone_set('America/Sao_Paulo');
-$datahoje = date('Y-m-d', time());
-
-
-
-foreach ($this->datas['prdutos'] as $myProducts) {
-    extract($myProducts);
-}
-foreach ($this->datas["pedido"] as $dados) {
-    extract($dados);
-}
-
-
-?>
-
-
-       */
-
-
-
 <body>
 
     <!-- Bootstrap JavaScript Libraries -->
@@ -114,18 +89,17 @@ foreach ($this->datas["pedido"] as $dados) {
         <h1 class="text-center">Seu carrinho </h1>
 
         <section class="container  flex-column p-4">
-            <form action="../pedido/edit" method="POST">
-                <input type="hidden" name="idProduto" value="<?php echo $idProduto; ?>">
-                <input type="hidden" name="idPedido" value="<?php echo $idPedido; ?>">
+            <form action="../pedido/edit" method="POST">   ////
+                <input type="hidden" name="idProduto">
+                <input type="hidden" name="idPedido" >
                 <div class="card   mb-3">
                     <div class="row  align-items-center g-0">
                         <div class="col">
-                            <img src="<?php echo $imagem; ?> " class="" alt="..." height="100%" width="90%">
+                            <img src="class="" alt="..." height="100%" width="90%">
                         </div>
                         <div class="col">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $nomeProduto; ?></h5>
-                                <p class="card-text">Valor:<span class="fw-bold" id="preco"> <?php echo $preco; ?></span>
+                                <h5 class="card-title"></h5>
                                 <div class="mb-3">
                                     <label class=" mb-2 form-label">
                                         <label>Quantidade</label>
@@ -149,11 +123,10 @@ foreach ($this->datas["pedido"] as $dados) {
                                     <label for="" class=" mb-2 form-label">
                                         Endereço de entrega:
                                     </label>
-                                    <input type="text" name="endereco" id="endereco" class="form-control" placeholder="" aria-describedby="helpId" value="<?php echo $endereco; ?>" required>
-                                </div>
+                                    <input type="text" name="endereco" id="endereco" class="form-control" placeholder="" aria-describedby="helpId">
                                 <div class="mb-3">
                                     <label class=" mb-2 form-label" for="">Data de entrega</label>
-                                    <input type="date" min="<?php echo $datahoje; ?>" name="dataEntrega" id="dataEntrega" class="form-control" required>
+                                    <input type="date" min="" name="dataEntrega" id="dataEntrega" class="form-control" required>
                                 </div>
                                 <div class="mb-3">
                                     <label class=" mb-2 form-label" for="hora da entrega">Hora da entrega</label>
@@ -175,11 +148,6 @@ foreach ($this->datas["pedido"] as $dados) {
 
 
 
-    /*
-    <?php
-    include FOOTER; ?> 
-    
-    */
     <script>
         const inputQuantidade = document.querySelector("#quantidadePedido");
         const precoElemento = document.querySelector("#preco");

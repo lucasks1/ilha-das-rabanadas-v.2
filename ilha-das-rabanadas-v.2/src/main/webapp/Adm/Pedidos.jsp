@@ -57,16 +57,7 @@
     <h1 class="text-center">Meus pedidos</h1>
     <div class="table-responsive">
         <div class="container">
-            /*
-
-            if (isset($this->datas["request"])) {
-
-                include './app/Views/Adm/meusPedidos.php';
-            } else {
-                include './app/Views/semPedidos.php';
-            }
-            
-            */
+          
             
         </div>
 

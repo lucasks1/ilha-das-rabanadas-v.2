@@ -9,20 +9,20 @@
 <body>
 
 <div class="card">
-    <div class="card-img"><img class="card-img-top " src="<?php echo $imagem; ?>" alt="Title"></div>
+    <div class="card-img"><img class="card-img-top " src="" alt="Title"></div>
     <div class="card-body ">
-        <h5 class="card-title fw-bold"><?php echo $nomeProduto; ?></h5>
-        <p class="card-text"><?php echo $descricao; ?></p>
-        <p><?php echo $preco; ?></p>
+        <h5 class="card-title fw-bold"></h5>
+        <p class="card-text"></p>
+        <p></p>
     </div>
     <div class="card-footer d-flex align-items-center justify-content-center gap-2">
-        <a id="edit" href="../adm/atualizarproduto?id=<?php echo $idProduto; ?>"><button class="btn btn-success">Editar</button></a>
-        <button type="button" class="btn btn-outline-danger W" data-bs-toggle="modal" data-bs-target="#modal<?php echo $idProduto; ?>">
+        <a id="edit" href="../adm/atualizarproduto?id=""><button class="btn btn-success">Editar</button></a>
+        <button type="button" class="btn btn-outline-danger W" data-bs-toggle="modal" data-bs-target="#modal=">
             Deletar
         </button>
     </div>
 </div>
-<div class="modal fade" id="modal<?php echo $idProduto; ?>" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+<div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm " role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -34,7 +34,7 @@
             </div>
             <div class="modal-footer">
                 <form action='../produto/delete' method='POST'>
-                    <input type='hidden' name='id' value='<?php echo $idProduto; ?>'>
+                    <input type='hidden' name='id' value=''>
 
                     <button name='deletar' type='submit' class='btn btn-outline-danger'>
                         Sim, quero deletar!

@@ -16,30 +16,11 @@
     <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<?php echo CSS ?>/form/formS.css">
-    
-        /*
-    <?php
-    // verificando se existe esse indice(enviar-formulario) na super global post
 
-
-    ?>
-    
-    */
-    
-    
-    
 </head>
 <body>
 
-           /*
-<?php
-include "./app/config.php";
-     
 
-
-
-?>
-*/
 
 <body>
 <div class="container-fluid " id="header">

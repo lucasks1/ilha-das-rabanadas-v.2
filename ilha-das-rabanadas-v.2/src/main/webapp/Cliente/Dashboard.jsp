@@ -1,13 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    
-    /*
-<?php
-include "./app/config.php";
-
-
-?>
-      */
 
 
 <!doctype html>
@@ -33,10 +25,7 @@ include "./app/config.php";
 
 <body>  
 
-/*
-    <?php include "./app/Views/Headers/header-dashboards.php" ?>
-    
-    */
+
     <main>
         <h1 class="text-center my-4">Área do Cliente</h1>
         <div class="container">

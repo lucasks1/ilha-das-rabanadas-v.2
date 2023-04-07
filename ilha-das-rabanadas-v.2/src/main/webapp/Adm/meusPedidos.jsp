@@ -22,13 +22,7 @@
     </thead>
     <tbody>
 
-        */
-
-        $dataAtual = date('d/m/Y');
-        foreach ($this->datas["request"] as $data) {
-            extract($data);
-            if ($dataAtual == $dataEntrega) {
-                echo (" 
+       
                         <tr class=''>
                                     <td scope='row'> $idPedido</td>
                                     <td> $dataEntrega</td>
@@ -77,8 +71,6 @@
     
             
         }
-
-        */
 
 
     </tbody>

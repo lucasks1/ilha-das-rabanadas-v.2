@@ -34,16 +34,7 @@
 
                 <div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
                     
-                    /*
-
-                    foreach ($this->datas["products"] as $produto) {
-                        extract($produto);
-                        if ($categoria === "Doce") {
-                            include './app/Views/Adm/include-produtos.php';
-                        }
-                    } 
-                    
-                   */
+                   
                 </div>
             </div>
 
@@ -52,15 +43,7 @@
 
                 <div class="d-flex flex-row  align-items-center  flex-wrap gap-5">
                     
-                    */
-
-                    foreach ($this->datas["products"] as $produto) {
-                        extract($produto);
-                        if ($categoria === "Salgado") {
-
-                            include './app/Views/Adm/include-produtos.php';
-                        }
-                    } 
+                  
                     
                     
                     */
@@ -70,16 +53,10 @@
                 <h3>Vegana</h3>
 
                 <div class="d-flex flex-row  align-items-center  flex-wrap gap-5">
-                    /*
-
-                    foreach ($this->datas["products"] as $produto) {
-                        extract($produto);
-                        if ($categoria === "Vegana") {
-
-                            include './app/Views/Adm/include-produtos.php';
-                        }
-                    } 
-                    */
+                    
+                    
+                    
+                    
                 </div>
             </div>
 
@@ -96,8 +73,8 @@
     <script>
         const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
     </script>
-    <?php
-    include FOOTER; ?>
+    
+    
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 
 
