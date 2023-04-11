@@ -16,7 +16,7 @@
         <p></p>
     </div>
     <div class="card-footer d-flex align-items-center justify-content-center gap-2">
-        <a id="edit" href="../adm/atualizarproduto?id=""><button class="btn btn-success">Editar</button></a>
+        <a id="edit" href="../adm/atualizarproduto?id="><button class="btn btn-success">Editar</button></a>
         <button type="button" class="btn btn-outline-danger W" data-bs-toggle="modal" data-bs-target="#modal=">
             Deletar
         </button>

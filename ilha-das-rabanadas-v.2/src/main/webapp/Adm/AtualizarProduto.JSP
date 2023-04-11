@@ -17,26 +17,6 @@
     <link rel="stylesheet" href="<?php echo CSS ?>/form/formS.css">
 </head>
 <body>
-
-   
-   
-   /*
-   
-   
-  
-<?php
-include "./app/config.php";
-
-if (isset($this->datas['informations'])) 
-foreach ($this->datas['informations'] as $data) {
-    extract($data);
-    # code...
-}
-
-
-?>
-
-   */
    
 
 
@@ -62,19 +42,19 @@ foreach ($this->datas['informations'] as $data) {
             <input type="hidden" name='id' value="<?php echo $idProduto; ?>">
             <div class="mb-3 box-inputs">
                 <label for="nomeProduto" class="form-label">Nome do Produto</label>
-                <input type="text" required name="nomeProduto" id="nomeProduto" class="form-control" value="<?php echo $nomeProduto; ?>" placeholder="" aria-describedby="helpId">
+                <input type="text" required name="nomeProduto" id="nomeProduto" class="form-control" value="" placeholder="" aria-describedby="helpId">
             </div>
             <div class="mb-3 box-inputs">
                 <label for="descricao" class="form-label">Descrição do Produto</label>
-                <input type="text" required name="descricao" id="descricao" class="form-control" placeholder="" value="<?php echo $descricao; ?>" aria-describedby="helpId">
+                <input type="text" required name="descricao" id="descricao" class="form-control" placeholder="" value="" aria-describedby="helpId">
             </div>
             <div class="mb-3 box-inputs">
                 <label for="preco" class="form-label">Preço do produto</label>
-                <input type="text" required name="preco" id="preco" class="form-control" placeholder="" aria-describedby="helpId" value="<?php echo $preco; ?>">
+                <input type="text" required name="preco" id="preco" class="form-control" placeholder="" aria-describedby="helpId" >
             </div>
             <div class="mb-3 box-inputs">
                 <label for="categoria" class="form-label">Categoria do produto</label>
-                <input type="text" required name="categoria" id="categoria" class="form-control" placeholder="Doce,salgado,vegano ..." value="<?php echo $categoria; ?>" aria-describedby="helpId">
+                <input type="text" required name="categoria" id="categoria" class="form-control" placeholder="Doce,salgado,vegano ..." value="" aria-describedby="helpId">
             </div>
             <div class="mb-3 box-inputs">
                 <label  for="imagemProduto" class="form-label">Imagem do produto</label>

@@ -20,7 +20,6 @@
             <th scope="col" colspan="2">Açoes</th>
         </tr>
     </thead>
-    <tbody>
 
        
                         <tr class=''>
@@ -63,17 +62,7 @@
                             </div>
                         </div>
                     </div>
-   
-                ");
-            }
-            
-    
-    
-            
-        }
-
-
-    </tbody>
+                    
    
 </table>
 </body>
