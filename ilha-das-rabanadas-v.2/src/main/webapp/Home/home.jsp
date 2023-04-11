@@ -55,8 +55,6 @@
 
 <body>
 
-   
-
 
     <section>
         <div id="boas-vindas-banner" class=" banner container-fluid d-flex align-items-center justify-content-center body">

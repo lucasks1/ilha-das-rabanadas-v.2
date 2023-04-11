@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+main {
+    background-color: white;
+    margin-top: 0px !important;
+    padding: 1em 0em;
+}
+
+.container>div {
+
+    padding: 1em 0em;
+}
+
+.card {
+    width: 22%;
+    box-shadow: 3px 5px 3px 0px #0000004a;
+    margin-bottom: 2em;
+}
+
+.card-img{
+    height: 180px;
+}
+.card-img-top{
+    height: 100%;
+}
+
+.card-body {
+    background-color: #ffbd5991;
+}
+
+.card-footer {
+    background-color: #ffbd5991;
+}
+
+.card-footer>a {
+    width: 100%;
+
+}
