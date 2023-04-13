@@ -11,7 +11,7 @@
 <div class="container-fluid  border border-top-3 border-dark " id="footer">
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-center py-5 align-items-center">
     <div class="col">
-      <img width="70%" src="/img/logo-footer.webp" alt="">
+      <img width="70%" src="./img/logo-footer.webp" alt="">
     </div>
 
 
