@@ -5,10 +5,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Meus Pedidos</title>
+
 </head>
 <body>
 
 <table class="table  table-hover">
+
     <thead>
         <tr>
             <th scope="col">Código do Pedido</th>
