@@ -13,6 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="<../public/css/form/formS.css">
+   <link rel="stylesheet" href="./c">
+
 </head>
 <body>
    
@@ -43,11 +47,11 @@
                 <input type="text" required name="nomeProduto" id="nomeProduto" class="form-control" value="" placeholder="" aria-describedby="helpId">
             </div>
             <div class="mb-3 box-inputs">
-                <label for="descricao" class="form-label">Descrição do Produto</label>
+                <label for="descricao" class="form-label">DescriÃ§Ã£o do Produto</label>
                 <input type="text" required name="descricao" id="descricao" class="form-control" placeholder="" value="" aria-describedby="helpId">
             </div>
             <div class="mb-3 box-inputs">
-                <label for="preco" class="form-label">Preço do produto</label>
+                <label for="preco" class="form-label">PreÃ§o do produto</label>
                 <input type="text" required name="preco" id="preco" class="form-control" placeholder="" aria-describedby="helpId" >
             </div>
             <div class="mb-3 box-inputs">
