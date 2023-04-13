@@ -47,6 +47,3 @@
 </body>
 
 </html>
-
-</body>
-</html>
