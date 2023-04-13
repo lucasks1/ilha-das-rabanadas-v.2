@@ -118,7 +118,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col d-flex justify-content-center"><img width="70%" src="../img/servico-prestado.webp" alt=""></div>
+                <div class="col d-flex justify-content-center"><img width="70%" src="./1.png" alt=""></div>
             </div>
 
 
