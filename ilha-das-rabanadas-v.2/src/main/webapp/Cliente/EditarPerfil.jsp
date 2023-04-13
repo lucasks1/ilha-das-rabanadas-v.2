@@ -14,9 +14,10 @@
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-
+     <link rel="stylesheet" href="../form/forms.css">
+   
 </head>
 <body>
 
@@ -48,7 +49,7 @@
 
         <div class="col-6">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" required value="<?php echo $nomeCliente; ?>" name="nome" id="nome" class="form-control" placeholder="" aria-describedby="helpId">
+          <input type="text" required value="" name="nome" id="nome" class="form-control" placeholder="" aria-describedby="helpId">
         </div>
         <div class="col-6">
           <label for="sobrenome" class="form-label">Sobrenome</label>
