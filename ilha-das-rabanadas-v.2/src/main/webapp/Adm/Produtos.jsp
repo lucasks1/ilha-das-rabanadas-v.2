@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php echo CSS; ?>/produto/cardapio.css">
     <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/css/produto/cardapio.css">
     <style>
 
     </style>
@@ -46,7 +47,7 @@
                   
                     
                     
-                    */
+                
                 </div>
             </div>
             <div id="Vegana">
