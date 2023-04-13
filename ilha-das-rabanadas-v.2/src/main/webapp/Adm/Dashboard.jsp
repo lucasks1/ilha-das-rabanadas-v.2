@@ -36,7 +36,9 @@
 							<i><lord-icon src="https://cdn.lordicon.com/ogkplaef.json"
 									trigger="morph" style="width:80px;height:80px"> </lord-icon></i>
 						</div>
-						<h4>Área de macarrao</h4>
+
+						<h4>Área de Pedidos</h4>
+
 					</div>
 					<div class="card-footer">
 						<a href="../adm/pedidos"><button class="btn btn-success">Acessar</button></a>
