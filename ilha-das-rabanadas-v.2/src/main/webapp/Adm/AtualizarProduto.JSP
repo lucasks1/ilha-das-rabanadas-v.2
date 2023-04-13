@@ -12,9 +12,11 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="<?php echo CSS ?>/form/formS.css">
+
+    <link rel="stylesheet" href="<../public/css/form/formS.css">
+   <link rel="stylesheet" href="./c">
+
 </head>
 <body>
    
@@ -39,17 +41,17 @@
     <div class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
         <h1 class="text-center">Atualizar Produto</h1>
         <form action="../produto/update" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name='id' value="<?php echo $idProduto; ?>">
+            <input type="hidden" name='id'>
             <div class="mb-3 box-inputs">
                 <label for="nomeProduto" class="form-label">Nome do Produto</label>
                 <input type="text" required name="nomeProduto" id="nomeProduto" class="form-control" value="" placeholder="" aria-describedby="helpId">
             </div>
             <div class="mb-3 box-inputs">
-                <label for="descricao" class="form-label">Descrição do Produto</label>
+                <label for="descricao" class="form-label">DescriÃ§Ã£o do Produto</label>
                 <input type="text" required name="descricao" id="descricao" class="form-control" placeholder="" value="" aria-describedby="helpId">
             </div>
             <div class="mb-3 box-inputs">
-                <label for="preco" class="form-label">Preço do produto</label>
+                <label for="preco" class="form-label">PreÃ§o do produto</label>
                 <input type="text" required name="preco" id="preco" class="form-control" placeholder="" aria-describedby="helpId" >
             </div>
             <div class="mb-3 box-inputs">
@@ -58,7 +60,7 @@
             </div>
             <div class="mb-3 box-inputs">
                 <label  for="imagemProduto" class="form-label">Imagem do produto</label>
-                <input required type="file" name='arquivo' class='form-control' value="<?php echo $imagem ?>">
+                <input required type="file" name='arquivo' class='form-control'>
 
             </div>
             <div id="button-submit " class="d-flex justify-content-center"><input id="finalizar" class="btn" type="submit" name='enviar-formulario' value="Finalizar"></div>
@@ -73,7 +75,6 @@
 
     </script>
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-    <script src="<?php echo JS; ?>/validarProduto.js"></script>
 
 </body>
 

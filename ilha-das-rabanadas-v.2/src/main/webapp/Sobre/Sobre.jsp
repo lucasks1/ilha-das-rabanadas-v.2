@@ -1,15 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
 
-<?php
-include "./app/config.php"; ?>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -24,7 +16,7 @@ include "./app/config.php"; ?>
 
     <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="<?php echo CSS; ?>/sobre/sobre.css">
+    <link rel="stylesheet" href="<../public/css/sobre/sobre.css">
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
     <style>
         .text {
@@ -43,11 +35,6 @@ include "./app/config.php"; ?>
 </head>
 
 <body>
-
-    <?php
-
-    include './app/Views/Headers/headerManager.php';
-    ?>
 
 
 
@@ -179,8 +166,6 @@ include "./app/config.php"; ?>
 
 
 
-    <?php
-    include FOOTER; ?>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

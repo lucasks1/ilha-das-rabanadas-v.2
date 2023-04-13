@@ -8,7 +8,7 @@
 </head>
 <body>
 
-                JAVA SCRIPT
+ <script>
 
  if (!isset($_SESSION['idLogin'])) {
     include('./app/Views/Headers/headerPadrao.php');
@@ -21,7 +21,7 @@
         include('./app/Views/Headers/headerCliente.php');
     }
 }
-   
+   </script>
 
 
 </body>

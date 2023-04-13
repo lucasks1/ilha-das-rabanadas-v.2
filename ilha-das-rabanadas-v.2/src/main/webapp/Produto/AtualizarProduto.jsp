@@ -1,20 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-<?php
-foreach ($this->dados['artigo'] as $dados) {
-    extract($dados);
-}
-?>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <title>Title</title>
@@ -24,29 +11,29 @@ foreach ($this->dados['artigo'] as $dados) {
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    
 </head>
 
 <body>
     <div>
 
         <form action="update" method="POST">
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="id">
             <label for="titulo">
                 <p>TITULO</p>
-                <input type="text" name="titulo" id="titulo" value="<?php echo $titulo; ?>">
+                <input type="text" name="titulo" id="titulo" value="">
 
             </label>
             <label for="conteudo">
                 <p>conteudo</p>
 
-                <input type="text" name="conteudo" id="conteudo" value="<?php echo $conteudo; ?>">
+                <input type="text" name="conteudo" id="conteudo" value="">
 
             </label>
             <label for="conteudo">
                 <p>conteudo</p>
 
-                <input type="text" name="conteudo" id="conteudo" value="<?php echo $conteudo; ?>">
+                <input type="text" name="conteudo" id="conteudo" value="">
 
             </label>
             <input type="submit" value="atualizar">

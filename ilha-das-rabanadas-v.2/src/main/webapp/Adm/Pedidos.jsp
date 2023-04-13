@@ -11,7 +11,6 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <style>
@@ -31,7 +30,6 @@
         }
     </style>
 
-<title>Insert title here</title>
 </head>
 <body>
 <head>
@@ -50,7 +48,7 @@
             </a>
 
             <div class="col-md-3 text-center m-auto">
-                <img width="60%" src="<?php echo IMG ?>/img/logo-dashboards.webp" alt="">
+                <img width="60%" src="../img/logo-dashboards.webp" alt="">
             </div>
         </header>
     </div>

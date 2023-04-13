@@ -13,9 +13,8 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="<?php echo CSS ?>/form/formS.css">
+    <link rel="stylesheet" href="../public/css/form/formS.css">
 
 </head>
 <body>
@@ -34,7 +33,7 @@
     </a>
 
     <div class="col-md-3 text-center m-auto">
-     <img width="60%" src="<?php echo IMG?>/img/logo-dashboards.webp" alt="">
+     <img width="60%" src="../img/logo-dashboards.webp" alt="">
     </div>
   </header>
 </div>
@@ -69,7 +68,6 @@
 
     </div>
 
-    <script src="<?php echo JS; ?>/validarProduto.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>

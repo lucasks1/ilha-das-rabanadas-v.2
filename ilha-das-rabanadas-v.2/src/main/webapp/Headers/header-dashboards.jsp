@@ -19,7 +19,7 @@
     </a>
 
     <div class="col-md-3 text-center m-auto">
-      <img width="60%" src="<?php echo IMG ?>/img/logo-dashboards.webp" alt="">
+      <img width="60%" src="../img/logo-dashboards.webp" alt="">
     </div>
     <a href="../logout/index"><lord-icon src="https://cdn.lordicon.com/moscwhoj.json" trigger="hover" colors="primary:#000,secondary:#000" style="width:60px;height:60px">
       </lord-icon>

@@ -5,10 +5,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Meus Pedidos</title>
+
 </head>
 <body>
 
 <table class="table  table-hover">
+
     <thead>
         <tr>
             <th scope="col">Código do Pedido</th>
@@ -81,7 +83,9 @@
                     </div>
                 </div>
             </div>
-        </div><script>
+        </div
+        
+        ><script>
         const myModalCancel = new bootstrap.Modal(document.getElementsById('cancel$idPedido'), options);
         const myModalEdit = new bootstrap.Modal(document.getElementsById('edit$idPedido'), options);
         </script>
