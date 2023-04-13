@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
-
 <!doctype html>
 <html lang="pt-br">
 
@@ -14,7 +13,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
+  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<../public/css/sobre/sobre.css">
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
@@ -156,7 +155,7 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img id="img" src="<?php echo IMG ?>/5.png" alt="" width="70%" class="img-fluid">
+                    <img id="img" src="../5.png" alt="" width="70%" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -177,5 +176,3 @@
 
 </html>
 
-</body>
-</html>
