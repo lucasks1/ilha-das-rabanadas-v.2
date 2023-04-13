@@ -8,8 +8,7 @@
 </head>
 <body>
 
-<?php
-include "./app/config.php"; ?>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -43,11 +42,6 @@ include "./app/config.php"; ?>
 </head>
 
 <body>
-
-    <?php
-
-    include './app/Views/Headers/headerManager.php';
-    ?>
 
 
 
@@ -179,8 +173,6 @@ include "./app/config.php"; ?>
 
 
 
-    <?php
-    include FOOTER; ?>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
