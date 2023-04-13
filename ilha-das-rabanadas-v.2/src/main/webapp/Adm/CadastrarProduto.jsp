@@ -34,7 +34,7 @@
     </a>
 
     <div class="col-md-3 text-center m-auto">
-     <img width="60%" src="<?php echo IMG?>/img/logo-dashboards.webp" alt="">
+     <img width="60%" src="./img/logo-dashboards.webp" alt="">
     </div>
   </header>
 </div>
@@ -69,7 +69,6 @@
 
     </div>
 
-    <script src="<?php echo JS; ?>/validarProduto.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>

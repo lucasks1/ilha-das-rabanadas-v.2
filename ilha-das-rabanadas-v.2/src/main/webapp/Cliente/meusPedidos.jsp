@@ -81,7 +81,9 @@
                     </div>
                 </div>
             </div>
-        </div><script>
+        </div
+        
+        ><script>
         const myModalCancel = new bootstrap.Modal(document.getElementsById('cancel$idPedido'), options);
         const myModalEdit = new bootstrap.Modal(document.getElementsById('edit$idPedido'), options);
         </script>

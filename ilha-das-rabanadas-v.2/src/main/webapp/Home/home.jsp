@@ -1,24 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-
-    <script>
-        onload = () => {
-            const toastEl = document.getElementById("toast");
-
-            const toast = new bootstrap.Toast(toastEl);
-
-            toast.show();
-        };
-    </script>
-
 
 <!doctype html>
 <html lang="pt-br">
@@ -32,8 +13,6 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
-    <link rel="stylesheet" href="<?php echo CSS; ?>/home/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <style>
     #card-cardapio {
@@ -55,6 +34,16 @@
 
 <body>
 
+    <script>
+        onload = () => {
+            const toastEl = document.getElementById("toast");
+
+            const toast = new bootstrap.Toast(toastEl);
+
+            toast.show();
+        };
+    </script>
+
 
     <section>
         <div id="boas-vindas-banner" class=" banner container-fluid d-flex align-items-center justify-content-center body">
@@ -72,7 +61,7 @@
             <div class="row justify-content-evenly align-items-center ">
                 <div class="col-4">
                     <div class="card">
-                        <img src="<?php echo IMG ?>/img/rabanada-vegana.webp" alt="" class="fluid">
+                        <img src="../img/rabanada-vegana.webp" alt="" class="fluid">
                         <div class="card-body" st>
                             <h5 class="card-title">Rabanadas veganas</h5>
                         </div>
@@ -80,7 +69,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card">
-                        <img src="<?php echo IMG ?>/img/rabanada-doce.webp" alt="" class="img-fluid w-100">
+                        <img src="../img/rabanada-doce.webp" alt="" class="img-fluid w-100">
                         <div class="card-body">
                             <h5 class="card-title">Rabanadas Doces</h5>
                         </div>
@@ -88,7 +77,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card">
-                        <img src="<?php echo IMG ?>/img/rabanada-salgada.webp" alt="" class="fluid">
+                        <img src="../img/rabanada-salgada.webp" alt="" class="fluid">
                         <div class="card-body">
                             <h5 class="card-title">Rabanadas Salgadas</h5>
                     </div>
@@ -128,7 +117,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col d-flex justify-content-center"><img width="70%" src="<?php echo IMG ?>/img/servico-prestado.webp" alt=""></div>
+                <div class="col d-flex justify-content-center"><img width="70%" src="../img/servico-prestado.webp" alt=""></div>
             </div>
 
 

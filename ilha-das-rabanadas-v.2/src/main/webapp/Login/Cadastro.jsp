@@ -1,15 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
 
-<?php
-include "./app/config.php"; ?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -21,9 +12,7 @@ include "./app/config.php"; ?>
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo CSS; ?>/form/forms.css">
 
-    <link rel="stylesheet" href="<?php echo CSS_PADRAO; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
@@ -40,7 +29,7 @@ include "./app/config.php"; ?>
       </a>
 
       <div class="col-md-3 text-center m-auto">
-        <img width="60%" src="<?php echo IMG ?>/img/logo-dashboards.webp" alt="">
+        <img width="60%" src="<../img/logo-dashboards.webp" alt="">
       </div>
     </header>
   </div>
@@ -50,11 +39,14 @@ include "./app/config.php"; ?>
     <h5 class="text-danger">Obs: só fazemos entregas em Nova Iguaçu!</h5>
     <form action="insert" method="POST" class="rounded">
       <div class="mb-4 row">
+      
 
         <div class="col-6">
           <label for="nome" class="form-label">Nome</label>
           <input type="text" required name="nome" id="nome" class="form-control" placeholder="" aria-describedby="helpId">
         </div>
+        
+        
         <div class="col-6">
           <label for="sobrenome" class="form-label">Sobrenome</label>
           <input type="text" required name="sobrenome" id="sobrenome" class="form-control" placeholder="" aria-describedby="helpId">
@@ -68,6 +60,7 @@ include "./app/config.php"; ?>
           <input type="text" required name="numeroCelular" id="numeroCelular" class="form-control" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required="required">
         </div>
       </div>
+
       <div class="mb-3 row">
         <div class="col-6">
           <label for="cep" class="form-label">Cep</label>
@@ -80,22 +73,25 @@ include "./app/config.php"; ?>
           <label for="rua" class="form-label">Rua</label>
           <input type="text" required name="rua" id="logradouro" class="form-control" placeholder="" aria-describedby="helpId">
         </div>
+        
         <div class="col">
           <label for="numero" class="form-label">Número</label>
           <input type="text" required name="numero" id="numero" class="form-control" placeholder="" aria-describedby="helpId">
-
         </div>
       </div>
+      
       <div class="mb-4 row">
         <div class="col">
           <label for="bairro" class="form-label">Bairro</label>
           <input type="text" required name="bairro" id="bairro" class="form-control" placeholder="" aria-describedby="helpId">
         </div>
+        
         <div class="col">
           <label for="cidade" class="form-label">Cidade</label>
           <input  value="Nova Iguaçu" name="cidade" id="localidade" class="form-control " placeholder="" aria-describedby="helpId">
         </div>
       </div>
+      
       <div class="mb-4 row">
         <div class="col">
           <label for="email" class="form-label">E-mail</label>
@@ -124,9 +120,8 @@ include "./app/config.php"; ?>
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+  
 
-  <script src="<?php echo JS; ?>/login/viaCep.js">
   </script>
 </body>
 
