@@ -95,7 +95,7 @@
         
       
            <div class="text-center">
-                <img src="<?php echo IMG; ?>/8.png" alt="imagem de nao há pedidos"></img>
+                <img src="./8.png" alt="imagem de nao há pedidos"></img>
                 <h4>Seu carrinho está vazio!</h4>
             </div>
 
@@ -136,11 +136,11 @@
                                         <label for="" class=" mb-2 form-label">
                                             Endereço de entrega:
                                         </label>
-                                        <input type="text" name="endereco" id="endereco" class="form-control" placeholder="" aria-describedby="helpId" value="<?php echo ($this->datas['address']); ?>" required>
+                                        <input type="text" name="endereco" id="endereco" class="form-control" placeholder="" aria-describedby="helpId" value="($this->datas['address']);" required>
                                     </div>
                                     <div class="mb-3">
                                         <label class=" mb-2 form-label" for="">Data de entrega</label>
-                                        <input type="date" min="<?php echo $datahoje; ?>" name="dataEntrega" id="dataEntrega" class="form-control" required>
+                                        <input type="date"  name="dataEntrega" id="dataEntrega" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <label class=" mb-2 form-label" for="hora da entrega">Hora da entrega</label>
