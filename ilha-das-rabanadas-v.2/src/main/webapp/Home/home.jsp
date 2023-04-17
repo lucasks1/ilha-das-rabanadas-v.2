@@ -14,22 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../home/home.css">
-    <style>
-    #card-cardapio {
-            height: 290px;
-            background-image: url("http://localhost/projetoIntegrador/public/imgs/img/rabanada-doce.webp");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 15em;
-            height: 20em;
-        }
-        .card-body{ 
-
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="../public/css/home/home.css">
+  
 
 </head>
 
@@ -70,7 +56,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card">
-                        <img src="../img/rabanada-doce.webp" alt="" class="img-fluid w-100">
+                        <img src="../public/imgs/img/rabanada-doce.webp" alt="" class="img-fluid w-100">
                         <div class="card-body">
                             <h5 class="card-title">Rabanadas Doces</h5>
                         </div>
@@ -137,8 +123,7 @@
             <a href="../home/sobre"><button id="btn-sobre" class=" rounded-pill  btn btn-success body"><b>Sobre nós</b></button></a>
         </div>
     </section>
-    <?php
-    include FOOTER; ?>
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
