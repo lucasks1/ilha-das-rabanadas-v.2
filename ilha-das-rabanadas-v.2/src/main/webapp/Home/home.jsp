@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../public/css/home/home.css">
-  
+  	<link rel="stylesheet" href="../public/css/style.css">
 
 </head>
 
@@ -120,7 +120,7 @@
             <h1 class="text-white"><b>Venha conhecer a nossa história!</b>
 
             </h1>
-            <a href="../home/sobre"><button id="btn-sobre" class=" rounded-pill  btn btn-success body"><b>Sobre nós</b></button></a>
+            <a href="../Sobre/Sobre.jsp"><button id="btn-sobre" class=" rounded-pill  btn btn-success body"><b>Sobre nós</b></button></a>
         </div>
     </section>
 

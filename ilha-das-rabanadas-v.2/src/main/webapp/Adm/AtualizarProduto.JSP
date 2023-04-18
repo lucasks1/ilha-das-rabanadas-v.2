@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="<../public/css/form/formS.css">
    <link rel="stylesheet" href="./c">
+   <link rel="stylesheet" href="../public/css/style.css">
 
 </head>
 <body>
@@ -27,7 +28,7 @@
   <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
 
 
-    <a href="../adm/produtos" class="nav  col-md-auto mb-2 justify-content-center mb-md-0" id="return">
+    <a href="../Adm/Produtos" class="nav  col-md-auto mb-2 justify-content-center mb-md-0" id="return">
 
       <lord-icon src="https://cdn.lordicon.com/zmkotitn.json" trigger="click" colors="primary:#121331" state="hover-2" style="width:50px;height:50px">
 </lord-icon>

@@ -17,6 +17,8 @@
 
 	<link rel="stylesheet" href="<../public/css/form/formS.css">
 	
+	<link rel="stylesheet" href="../public/css/style.css">
+	
 </head>
 
 <body>

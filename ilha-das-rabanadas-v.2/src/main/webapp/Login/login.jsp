@@ -15,6 +15,7 @@
 	
 	<link rel="stylesheet" href="<../public/css/login/animacao.css">
 	<link rel="stylesheet" href="<../public/css/login/login.css">
+	<link rel="stylesheet" href="../public/css/style.css">
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -59,7 +60,7 @@
 
         </div>
       </form>
-      <a class="nav-link links mt-3" href="../home/index">
+      <a class="nav-link links mt-3" href="../Home/home.jsp">
         <h6>Retornar ao site</h6>
       </a>
     </div>
