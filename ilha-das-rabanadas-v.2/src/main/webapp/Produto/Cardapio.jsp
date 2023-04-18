@@ -2,8 +2,8 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ page import="com.ilhaDasRabanadas.bean.*"%>
 <%@ page import="java.util.* "%>
-<%@ page
-	import="com.ilhaDasRabanadas.dao.PodutoDao,com.ilhaDasRabanadas.bean.*,java.util.* "%>
+<%-- <%@ page
+	import="com.ilhaDasRabanadas.dao.ProdutoDao"%> --%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 

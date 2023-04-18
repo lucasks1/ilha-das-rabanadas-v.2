@@ -42,7 +42,7 @@
     <section id="secao-cardapio">
         <div class="container  p-3">
             <h3 class="text-center">Cardápio</h3>
-            <a class="nav-link links" href="../produto/index">
+            <a class="nav-link links" href="../Produto/Cardapio.jsp">
                 <p class="text-end">Visualizar cardápio completo</p>
             </a>
             <div class="row justify-content-evenly align-items-center ">
