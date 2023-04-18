@@ -36,7 +36,7 @@
 
     <div id="container-form" class="m-auto d-flex flex-column align-items-center rounded">
       <div class="header text-center ">
-        <img src="../img/logo-dashboards.webp" alt="" width="70%">
+        <img src="../public/imgs/img/logo-dashboards.webp" alt="" width="70%">
       </div>
       
       <form method="POST" class="d-flex justify-content-center align-items-center flex-column">
