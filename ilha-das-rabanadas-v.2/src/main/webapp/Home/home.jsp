@@ -15,7 +15,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../public/css/home/home.css">
-    <link rel="stylesheet" herf="style.css" >
   
 
 </head>
@@ -46,18 +45,15 @@
             <a class="nav-link links" href="../Produto/Cardapio.jsp">
                 <p class="text-end">Visualizar cardápio completo</p>
             </a>
-            
-            
             <div class="row justify-content-evenly align-items-center ">
                 <div class="col-4">
                     <div class="card">
                         <img src="../img/rabanada-vegana.webp" alt="" class="fluid">
-                        <div class="card-body">
+                        <div class="card-body" st>
                             <h5 class="card-title">Rabanadas veganas</h5>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-4">
                     <div class="card">
                         <img src="../public/imgs/img/rabanada-doce.webp" alt="" class="img-fluid w-100">
@@ -66,16 +62,14 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-4">
                     <div class="card">
-                        <img src="../public/imgs/img/rabanaada-calabresa.webp" alt="" class="fluid">
+                        <img src="../img/rabanada-salgada.webp" alt="" class="fluid">
                         <div class="card-body">
                             <h5 class="card-title">Rabanadas Salgadas</h5>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <section id="secao-servico" class="d-flex  justify-content-center align-center">
