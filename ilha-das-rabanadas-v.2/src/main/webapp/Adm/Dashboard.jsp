@@ -19,7 +19,7 @@
 	crossorigin="anonymous">
 
 <link rel="stylesheet" href="../public/css/dashboards/dashboard.css">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="../public/css/style.css">
 <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 
 
@@ -41,7 +41,7 @@
 
 					</div>
 					<div class="card-footer">
-						<a href="../adm/pedidos"><button class="btn btn-success">Acessar</button></a>
+						<a href="../Adm/Pedidos.jsp"><button class="btn btn-success">Acessar</button></a>
 					</div>
 				</div>
 				<div class="card">
@@ -53,7 +53,7 @@
 						<h4>Área de produtos</h4>
 					</div>
 					<div class="card-footer">
-						<a href="../adm/produtos"><button class="btn btn-success">Acessar</button></a>
+						<a href="../Adm/Produtos.jsp"><button class="btn btn-success">Acessar</button></a>
 					</div>
 				</div>
 			</div>
