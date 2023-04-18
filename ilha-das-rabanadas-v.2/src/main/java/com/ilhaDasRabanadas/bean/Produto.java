@@ -1,9 +1,10 @@
 package com.ilhaDasRabanadas.bean;
 
-class Produto {
+public class Produto {
+
 	protected int idProduto;
 	public String nomeProduto;
-	public double preco;
+	public String preco;
 	public String descricao;
 	public String imagem;
 	public String categoria;
@@ -24,11 +25,11 @@ class Produto {
 		this.nomeProduto = nomeProduto;
 	}
 
-	public double getPreco() {
+	public String getPreco() {
 		return preco;
 	}
 
-	public void setPreco(double preco) {
+	public void setPreco(String preco) {
 		this.preco = preco;
 	}
 
@@ -55,17 +56,16 @@ class Produto {
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
-	
-	public Produto(String nomeProduto,Double preco,String descricao,String imagem,int idProduto,String categoria) {
-		
+
+	public Produto(String nomeProduto, String preco, String descricao, String imagem, int idProduto, String categoria) {
+
 		this.nomeProduto = nomeProduto;
 		this.preco = preco;
 		this.descricao = descricao;
 		this.imagem = imagem;
 		this.idProduto = idProduto;
 		this.categoria = categoria;
-		
-		
+
 	}
 
 }
