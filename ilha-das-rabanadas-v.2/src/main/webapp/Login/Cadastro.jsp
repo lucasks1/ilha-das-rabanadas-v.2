@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-	<link rel="stylesheet" href="<../public/css/form/formS.css">
+	<link rel="stylesheet" href="<../public/css/form/forms.css">
 	
 	<link rel="stylesheet" href="../public/css/style.css">
 	
@@ -26,14 +26,14 @@
     <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
 
 
-      <a href="../login/index " class="nav col-md-auto mb-2 justify-content-center mb-md-0" id="return">
+      <a href="./login.jsp" class="nav col-md-auto mb-2 justify-content-center mb-md-0" id="return">
 
         <lord-icon src="https://cdn.lordicon.com/zmkotitn.json" trigger="hover" colors="primary:#121331" state="hover-2" style="width:50px;height:50px">
         </lord-icon>
       </a>
 
       <div class="col-md-3 text-center m-auto">
-        <img width="60%" src="<../img/logo-dashboards.webp" alt="">
+        <img width="80%" src="../public/imgs/img/logo-dashboards.webp" alt="">
       </div>
     </header>
   </div>
