@@ -28,7 +28,7 @@
         <h1 class="text-center">Seus produtos</h1>
 
         <div class="container">
-            <a href="./cadastrarproduto"><span class="btn btn-success"><span>Adicionar novo produto</span></span></a>
+            <a href="./CadastrarProduto.jsp"><span class="btn btn-success"><span>Adicionar novo produto</span></span></a>
             <div id="doces">
                 <h3>Doces</h3>
 
