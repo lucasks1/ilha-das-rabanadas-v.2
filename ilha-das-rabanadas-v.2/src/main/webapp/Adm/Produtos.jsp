@@ -11,7 +11,8 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../public/css/produto/cardapio.css">
+       <link rel="stylesheet" herf="../public/css/style.css">
+    
     <style>
 
     </style>
@@ -32,7 +33,9 @@
                 <h3>Doces</h3>
 
                 <div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
-                    
+                                        <div class="card">
+                        <img src="../img/rabanada-vegana.webp" alt="" class="fluid">
+                        <div class="card-body">
                    
                 </div>
             </div>

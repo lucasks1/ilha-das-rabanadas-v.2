@@ -18,8 +18,9 @@
 	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 	crossorigin="anonymous">
 
-<link rel="stylesheet" href="../public/css/dashboards/dashboard.css">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../dashboards/dashboard.css">
+    
 <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 
 

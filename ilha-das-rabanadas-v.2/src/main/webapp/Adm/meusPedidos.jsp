@@ -33,11 +33,11 @@
 
 
                                         <a href='../adm/editarPedido?idPedido=$idPedido'>
-                                            <button type='button' class='btn btn-outline-success ' data-bs-toggle='modal' data-bs-target='#edit$idPedido'>
+                                            <button type='button' class='btn btn-outline-success ' data-bs-toggle='modal' data-bs-target='editar pedido'>
                                                 <i class='bi bi-pencil'></i> <span>Editar Pedido</span>
                                             </button>
                                         </a>
-                                        <button  type='button' class='btn btn-outline-danger'data-bs-toggle='modal' data-bs-target='#cancel$idPedido'>
+                                        <button  type='button' class='btn btn-outline-danger'data-bs-toggle='modal' data-bs-target='cancelar'>
                                             <i class='bi bi-trash'></i>     <span>Cancelar</span>
                                         </button>
                                     </td>
