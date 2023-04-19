@@ -1,31 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Ilha das Rabanadas</title>
 </head>
 <body>
 
-<div class="container-fluid " id="header">
-  <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+	<div class="container-fluid " id="header">
+		<header
+			class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
 
 
-    <a href="../home/index" class="nav  col-md-auto mb-2 justify-content-center mb-md-0" id="return">
+			<a href="../Home/home.jsp"
+				class="nav  col-md-auto mb-2 justify-content-center mb-md-0"
+				id="return"> <lord-icon
+					src="https://cdn.lordicon.com/zmkotitn.json" trigger="hover"
+					colors="primary:#121331" state="hover-2"
+					style="width:50px;height:50px"> </lord-icon>
+			</a>
 
-      <lord-icon src="https://cdn.lordicon.com/zmkotitn.json" trigger="hover" colors="primary:#121331" state="hover-2" style="width:50px;height:50px">
-      </lord-icon>
-    </a>
-
-    <div class="col-md-3 text-center m-auto">
-      <img width="60%" src="../img/logo-dashboards.webp" alt="">
-    </div>
-    <a href="../logout/index"><lord-icon src="https://cdn.lordicon.com/moscwhoj.json" trigger="hover" colors="primary:#000,secondary:#000" style="width:60px;height:60px">
-      </lord-icon>
-    </a>
-  </header>
-</div>
+			<div class="col-md-3 text-center m-auto">
+				<img width="80%" src="../public/imgs/img/logo-dashboards.webp"
+					alt="">
+			</div>
+			<a href="../logout/index"><lord-icon
+					src="https://cdn.lordicon.com/moscwhoj.json" trigger="hover"
+					colors="primary:#000,secondary:#000" style="width:60px;height:60px">
+				</lord-icon> </a>
+		</header>
+	</div>
 
 </body>
 </html>
