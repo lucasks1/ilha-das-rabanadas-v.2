@@ -16,7 +16,7 @@ public class Conexao {
 	private final String user = "root";
 	private final String pass = "";
 
-	protected void open() {
+	protected void  open() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection(url, user, pass);

@@ -57,15 +57,6 @@ public class Produto {
 		this.categoria = categoria;
 	}
 
-	public Produto(String nomeProduto, String preco, String descricao, String imagem, int idProduto, String categoria) {
-
-		this.nomeProduto = nomeProduto;
-		this.preco = preco;
-		this.descricao = descricao;
-		this.imagem = imagem;
-		this.idProduto = idProduto;
-		this.categoria = categoria;
-
-	}
+	
 
 }
