@@ -8,15 +8,15 @@ import java.sql.ResultSet;
 import java.sql.*;
 
 public class Conexao {
-	protected PreparedStatement stmt;// linguagem sql
-	protected ResultSet rs; // atingir o banco
-	protected Connection con;// conexão
+	protected static PreparedStatement stmt;// linguagem sql
+	protected static ResultSet rs; // atingir o banco
+	protected static Connection con;// conexão
 
-	private final String url = "jdbc:mysql://localhost:3306/rabanada";
-	private final String user = "root";
-	private final String pass = "";
+	private final static String url = "jdbc:mysql://localhost:3306/rabanada";
+	private final static String user = "root";
+	private final static String pass = "";
 
-	protected void  open() {
+	protected static void open() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection(url, user, pass);

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import com.ilhaDasRabanadas.bean.Produto;
 
-class ProdutoDao extends Conexao {
-	public List<Produto> getAllProdutos() {
+public class ProdutoDao extends Conexao {
+	public static  List<Produto> getAllProdutos() {
 		List<Produto> list = new ArrayList<Produto>();
 		try {
 			open();

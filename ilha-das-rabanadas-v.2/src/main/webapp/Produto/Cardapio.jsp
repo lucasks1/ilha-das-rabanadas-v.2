@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ page import="com.ilhaDasRabanadas.bean.Produto"%>
-<%@ page import="java.util.*"%>
-<%@ page import="com.ilhaDasRabanadas.dao.ProdutoDao"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 
 
 
@@ -34,53 +31,56 @@
 </head>
 
 <body>
+	<%@ page import="com.ilhaDasRabanadas.bean.Produto"%>
 
-<%
-List<Produto> list = ProdutoDao.getAllProdutos();
-request.setAttribute("list",list);
-%>
+	<%@ page import="com.ilhaDasRabanadas.dao.ProdutoDao"%>
+	<%@ page import="java.util.*"%>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	<%
+	List<Produto> list = ProdutoDao.getAllProdutos();
+	request.setAttribute("list", list);
+	%>
 	<main>
 		<h1 class="text-center">Cardápio</h1>
-		<div class="container">
-			<div id="doces">
-				<h3>Rabanadas Doces</h3>
+		<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
+			<c:forEach items="${list}" var="produto">
+				<div class="card">
+					<div class="card-img">
+						<img class="card-img-top " src="" alt="Title">
+					</div>
+					<div class="card-body ">
+						<h5 class="card-title fw-bold">${produto.getNomeProduto()}</h5>
+						<p class="card-text">${produto.getDescricao()}</p>
+						<p>${produto.getPreco()}</p>
+					</div>
+					<div
+						class="card-footer d-flex align-items-center justify-content-center gap-2">
+						<a id="edit" href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+								class="btn btn-success">Encomendar</button></a>
 
-				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
-
-					<div class="card">
-						<div class="card-img">
-							<img class="card-img-top " src="<?php echo $imagem; ?>"
-								alt="Title">
-						</div>
-						<div class="card-body ">
-							<h5 class="card-title fw-bold"></h5>
-							<p class="card-text"></p>
-							<p></p>
-						</div>
-						<div
-							class="card-footer d-flex align-items-center justify-content-center gap-2">
-							<a id="edit"
-								href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
-									class="btn btn-success">Encomendar</button></a>
-
-						</div>
 					</div>
 				</div>
+		</div>
+		</c:forEach>
+
+
+		</div>
+		<div id="Salgados">
+			<h3>Rabanadas Salgadas</h3>
+
+			<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
+
+
 			</div>
-			<div id="Salgados">
-				<h3>Rabanadas Salgadas</h3>
+		</div>
+		<div id="Vegana">
+			<h3>Rabanadas Veganas</h3>
 
-				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
+			<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
 
-				</div>
+
 			</div>
-			<div id="Vegana">
-				<h3>Rabanadas Veganas</h3>
-
-				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
-
-				</div>
-			</div>
+		</div>
 		</div>
 
 
