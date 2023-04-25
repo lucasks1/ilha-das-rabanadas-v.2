@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../public/css/produto/cardapio.css">
     <link rel="stylesheet" href="../public/css/style.css">
-    <link rel="icon" href="../public/imgs/img/palmeira.png">
-    <style>
-
-    </style>
+   
 <head>
 <meta charset="ISO-8859-1">
 </head>
@@ -34,7 +31,6 @@
 
     <div class="col-md-3 text-center m-auto">
      <img width="60%" src="../public/imgs/img/logo-dashboards.webp" class="btn" type="submit" alt="">
-     <a herf="../Adm/Produto .jsp" ></a>
     </div>
   </header>
 </div>

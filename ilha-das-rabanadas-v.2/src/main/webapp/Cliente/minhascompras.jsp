@@ -81,8 +81,6 @@
 <body>
 
 
-
-<body>
     <!-- Bootstrap JavaScript Libraries -->
     
     
@@ -95,7 +93,7 @@
         
       
            <div class="text-center">
-                <img src="./8.png" alt="imagem de nao há pedidos"></img>
+                <img src="../public/imgs/pedidos/naoHaPedidos.webp" alt=""></img>
                 <h4>Seu carrinho está vazio!</h4>
             </div>
 
@@ -136,7 +134,7 @@
                                         <label for="" class=" mb-2 form-label">
                                             Endereço de entrega:
                                         </label>
-                                        <input type="text" name="endereco" id="endereco" class="form-control" placeholder="" aria-describedby="helpId" value="($this->datas['address']);" required>
+                                        <input type="text" name="endereco" id="endereco" class="form-control" placeholder="" aria-describedby="helpId" required>
                                     </div>
                                     <div class="mb-3">
                                         <label class=" mb-2 form-label" for="">Data de entrega</label>
@@ -151,7 +149,7 @@
                         </div>
                     </div>
                     <div class="d-flex " id="buttons">
-                        <a href="../carrinho/delete"><button type="button" class="btn btn-secondary">Cancelar encomenda</button></a>
+                        <a href="../0"><button type="button" class="btn btn-secondary">Cancelar encomenda</button></a>
                         <input type="submit" class=" btn btn-success" value="Fechar encomenda">
                     </div>
                 </form>
