@@ -5,7 +5,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Title</title>
+  <title>Cadastro</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <metarequired name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +24,9 @@
 </head>
 
 <body>
+
+<jsp:include page="../Headers/headerCliente.jsp"></jsp:include>
+
   <div class="container-fluid " id="header">
     <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
 
