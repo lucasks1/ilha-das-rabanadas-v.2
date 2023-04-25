@@ -14,7 +14,7 @@
 
     <a href="../adm/index" class="nav  col-md-auto mb-2 justify-content-center mb-md-0" id="return">
 
-      <lord-icon src="https://cdn.lordicon.com/zmkotitn.json" trigger="click" colors="primary:#121331" state="hover-2" style="width:50px;height:50px">
+      <lord-icon src="../public/imgs/img/logo-dashboards.webp" trigger="click" colors="primary:#121331" state="hover-2" style="width:50px;height:50px">
 </lord-icon>
     </a>
 

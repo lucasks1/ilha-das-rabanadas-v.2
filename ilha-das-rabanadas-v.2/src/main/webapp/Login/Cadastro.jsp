@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-	<link rel="stylesheet" href="<../public/css/form/forms.css">
+	<link rel="stylesheet" href="../public/css/form/forms.css">
 	
 	<link rel="stylesheet" href="../public/css/style.css">
 	
@@ -25,7 +25,7 @@
 
 <body>
 
-<jsp:include page="../Headers/headerCliente.jsp"></jsp:include>
+
 
   <div class="container-fluid " id="header">
     <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -115,7 +115,7 @@
         </div>
 
       </div>
-      <div id="button-submit " class="d-flex justify-content-center"><input id="finalizar" class="btn" type="submit" value="Finalizar o cadastro"></div>
+      <div id="button-submit" class="d-flex justify-content-center" href="../Home/home.jsp"><input id="finalizar" class="btn" type="submit" value="Finalizar o cadastro" ></div>
 
     </form>
   </div>

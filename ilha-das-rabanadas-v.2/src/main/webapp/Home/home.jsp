@@ -5,7 +5,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Ilhas das Rabanadas</title>
+    <title>Ilha das Rabanadas</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -52,7 +52,7 @@
             <div class="row justify-content-evenly align-items-center ">
                 <div class="col-4">
                     <div class="card">
-                        <img src="../img/rabanada-vegana.webp" alt="" class="fluid">
+                        <img src="../public/imgs/img/rabanada-vegana.webp" alt="" class="fluid">
                         <div class="card-body" st>
                             <h5 class="card-title">Rabanadas veganas</h5>
                         </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card">
-                        <img src="../img/rabanada-salgada.webp" alt="" class="fluid">
+                        <img src="..public/imgs/img/rabanada-salgada.webp" alt="" class="fluid">
                         <div class="card-body">
                             <h5 class="card-title">Rabanadas Salgadas</h5>
                     </div>
@@ -108,7 +108,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col d-flex justify-content-center"><img width="70%" src="./1.png" alt=""></div>
+                <div class="col d-flex justify-content-center"><img width="70%" src="../public/imgs/1.png" alt=""></div>
             </div>
 
 

@@ -5,7 +5,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Ilha das rabanadas</title>
+  <title>Login</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,8 +13,8 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	
-	<link rel="stylesheet" href="<../public/css/login/animacao.css">
-	<link rel="stylesheet" href="<../public/css/login/login.css">
+	<link rel="stylesheet" href="../public/css/login/animacao.css">
+	<link rel="stylesheet" href="../public/css/login/login.css">
 	<link rel="stylesheet" href="../public/css/style.css">
 	<link rel="icon" href="../public/imgs/img/palmeira.png">
 
@@ -33,6 +33,7 @@
 </style>
 
 <body>
+<jsp:include page="./animacao.jsp"></jsp:include>
   <main class="m-auto d-flex flex-column align-items-center">
 
     <div id="container-form" class="m-auto d-flex flex-column align-items-center rounded">
@@ -57,7 +58,7 @@
         <p class="text-start">Esqueceu a senha?</p>
         <div class="d-flex align-items gap-3">
           <input id="entrar" class="btn " type="submit" value="Entrar" name="sendLogin">
-          <a href="./cadastrar" id="cadastrar" class="btn btn-outline-primary">Cadastrar</a>
+          <a href="../Login/Cadastro.jsp" id="cadastrar" class="btn btn-outline-primary">Cadastrar</a>
 
         </div>
       </form>
