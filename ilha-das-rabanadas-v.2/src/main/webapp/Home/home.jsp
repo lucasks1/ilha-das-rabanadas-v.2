@@ -22,6 +22,9 @@
 
 <body>
 
+<jsp:include page="../Headers/headerPadrao.jsp"></jsp:include>
+
+
     <script>
         onload = () => {
             const toastEl = document.getElementById("toast");
@@ -124,6 +127,12 @@
             <a href="../Sobre/Sobre.jsp"><button id="btn-sobre" class=" rounded-pill  btn btn-success body"><b>Sobre nós</b></button></a>
         </div>
     </section>
+    
+    
+    
+    
+    
+    <jsp:include page="../Footers/footer.jsp"></jsp:include>
 
 
     <!-- Bootstrap JavaScript Libraries -->
