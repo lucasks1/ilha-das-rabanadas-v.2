@@ -35,7 +35,7 @@
     </a>
 
     <div class="col-md-3 text-center m-auto">
-     <img width="60%" src="<?php echo IMG?>/img/logo-dashboards.webp" alt="">
+     <img width="60%" src="../public/imgs/img/logo-dashboards.webp" alt="">
     </div>
   </header>
 </div>

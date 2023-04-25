@@ -13,7 +13,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<link rel="stylesheet" href="../public/css/style.css">
-    <link rel="stylesheet" href="">
+  
     <style>
         section {
             background: rgba(217, 180, 72, 0.3);
@@ -80,6 +80,25 @@
 
 <body>
 
+
+<div class="container-fluid " id="header">
+  <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+
+    <a href="./Produtos/Produtos.jsp" class="nav  col-md-auto mb-2 justify-content-center mb-md-0" id="return">
+
+      <lord-icon src="https://cdn.lordicon.com/zmkotitn.json" trigger="click" colors="primary:#121331" state="hover-2" style="width:50px;height:50px">
+</lord-icon>
+    </a>
+
+    <div class="col-md-3 text-center m-auto">
+     <img width="60%" src="../public/imgs/img/logo-dashboards.webp" class="btn" type="submit" alt="">
+     <a herf="../Adm/Produto .jsp" ></a>
+    </div>
+  </header>
+</div>
+
+
     <!-- Bootstrap JavaScript Libraries -->
    
 
@@ -139,6 +158,7 @@
                 <div class="d-flex " id="buttons">
                     <button type="button" class="btn btn-secondary">Cancelar encomenda</button>
                     <input type="submit" class=" btn btn-success" value="Fechar encomenda">
+                    
                 </div>
             </form>
 
