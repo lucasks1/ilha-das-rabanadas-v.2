@@ -16,6 +16,7 @@
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<../public/css/sobre/sobre.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <link rel="icon" href="../public/imgs/img/palmeira.png">
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
     <style>
@@ -37,13 +38,15 @@
 <body>
 
 
+<jsp:include page="../Headers/headerPadrao.jsp"></jsp:include>
+
 
     <section class="container-fluid corPrimaria py-3">
         <div class="container">
             <h1 class="text-center">Sobre a Ilha</h1>
             <div class="row align-items-center">
                 <div class="col">
-                    <img id="img" src="<?php echo IMG ?>/img/ilhaprat.jpg" alt="" width="70%" class="img-fluid">
+                    <img id="img" src="../public/imgs/img/ilhaprat.jpg" alt="" width="70%" class="img-fluid">
                 </div>
                 <div class="col">
                     <p class=" text"> A missão da Ilha é proporcionar sabores diferentes para que as pessoas
@@ -82,7 +85,7 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img id="img" src="<?php echo IMG ?>/3.png" alt="" width="70%" class="img-fluid">
+                    <img id="img" src="../public/imgs/3.png" alt="" width="70%" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -94,7 +97,7 @@
             <h1 class="text-center">Nossos valores</h1>
             <div class="row align-items-center">
                 <div class="col-6">
-                    <img id="img" src="<?php echo IMG ?>/4.png" alt="" width="70%" class="img-fluid">
+                    <img id="img" src="../public/imgs/4.png" alt="" width="70%" class="img-fluid">
                 </div>
                 <div class="col">
                     <ul class="d-flex flex-column gap-5">
@@ -156,13 +159,13 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img id="img" src="../5.png" alt="" width="70%" class="img-fluid">
+                    <img id="img" src="../public/imgs/5.png" alt="" width="70%" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
-
+ <jsp:include page="../Footers/footer.jsp"></jsp:include>
 
 
 
