@@ -20,6 +20,7 @@
 
 <link rel="stylesheet" href="../public/css/dashboards/dashboard.css">
 <link rel="stylesheet" href="../public/css/style.css">
+<link rel="icon" href="../public/imgs/img/palmeira.png">
 <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 
 
