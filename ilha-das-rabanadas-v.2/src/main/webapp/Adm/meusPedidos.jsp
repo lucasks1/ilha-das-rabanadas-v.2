@@ -20,6 +20,7 @@
             <th scope="col" colspan="2">Açoes</th>
         </tr>
     </thead>
+    <tbody>
 
        
                         <tr class=''>
@@ -32,7 +33,7 @@
                                     <td>
 
 
-                                        <a href='../Adm/editarPedido?idPedido=$idPedido'>
+                                        <a href='../adm/editarPedido?idPedido=$idPedido'>
                                             <button type='button' class='btn btn-outline-success ' data-bs-toggle='modal' data-bs-target='#edit$idPedido'>
                                                 <i class='bi bi-pencil'></i> <span>Editar Pedido</span>
                                             </button>
@@ -62,8 +63,9 @@
                             </div>
                         </div>
                     </div>
-                    
+
+
+
+    </tbody>
    
 </table>
-</body>
-</html>
