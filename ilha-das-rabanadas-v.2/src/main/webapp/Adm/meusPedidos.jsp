@@ -33,6 +33,7 @@
 
 
                                         <a href='../Adm/editarPedido?idPedido=$idPedido'>
+                                       
                                             <button type='button' class='btn btn-outline-success ' data-bs-toggle='modal' data-bs-target='#edit$idPedido'>
                                                 <i class='bi bi-pencil'></i> <span>Editar Pedido</span>
                                             </button>
