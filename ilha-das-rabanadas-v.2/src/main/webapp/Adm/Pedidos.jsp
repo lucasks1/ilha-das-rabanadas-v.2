@@ -15,6 +15,8 @@
 
 	<link rel="stylesheet" href="../public/css/style.css">
 	
+	<link rel="icon" href="../public/imgs/img/palmeira.png">
+	
     <style>
         :root {
             --background-principal: #ffbd59;

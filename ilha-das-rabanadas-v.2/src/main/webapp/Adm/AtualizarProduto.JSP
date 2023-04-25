@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="<../public/css/form/formS.css">
    <link rel="stylesheet" href="../public/css/style.css">
+   <link rel="icon" href="../public/imgs/img/palmeira.png">
 
 </head>
 <body>
