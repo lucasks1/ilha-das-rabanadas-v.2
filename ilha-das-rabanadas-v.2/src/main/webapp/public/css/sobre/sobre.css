@@ -3,6 +3,7 @@
     font-family: "lato";
     letter-spacing: 0.5px;
 }
+
 #informacoes{
     width: 50%;
     background-color: #d9b4484d;
@@ -66,3 +67,4 @@ main {
     transition: all ease-in-out linear;
     background-color: var(--hover)
 }
+

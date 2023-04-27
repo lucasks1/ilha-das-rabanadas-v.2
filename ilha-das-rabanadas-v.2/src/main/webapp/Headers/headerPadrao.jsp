@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +7,7 @@
 <title>Home</title>
 </head>
 <body>
+
 
 <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">

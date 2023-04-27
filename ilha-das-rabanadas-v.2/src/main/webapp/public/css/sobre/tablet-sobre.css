@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+/* regra para telas menores */
+@media only screen and (max-width: 600px) {
+ /* tornar o elemento mais estreito */
+  .elemento {
+    width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+ /* tornar o elemento mais estreito */
+  .elemento {
+    width: 50%;
+  }
+}
