@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="pt-br">
-<title>Ilhas das Rabanadas</title>
+<title>Ilha das Rabanadas</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../public/css/produto/cardapio.css">
     <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" href="../public/imgs/img/palmeira.png">
    
 <head>
 <meta charset="ISO-8859-1">

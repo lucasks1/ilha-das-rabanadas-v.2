@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Ilha das Rabanadas</title>
+<title>Home</title>
 </head>
 <body>
 
