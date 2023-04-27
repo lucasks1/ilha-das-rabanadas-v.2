@@ -17,17 +17,17 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active links" aria-current="page" href="../Home/home.jsp">Home</a>
+          <a class="nav-link active links" aria-current="page" href="../Home/home.jsp"> Home  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black links" href="../Produto/Cardapio.jsp">Cardápio</a>
+          <a class="nav-link text-black links" href="../Produto/Cardapio.jsp"> Cardápio  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black links" href="../Sobre/Sobre.jsp">Sobre</a>
+          <a class="nav-link text-black links" href="../Sobre/Sobre.jsp">  Sobre </a>
         </li>
       </ul>
       <span class="navbar-text">
-        <a href="../Login/login.jsp"><button id="btn-login" class="btn btn-success" type="submit">Login</button></a>
+        <a href="../Login/login.jsp"><button id="btn-login" class="btn btn-success" type="submit">Login </button></a>
       </span>
     </div>
   </div>

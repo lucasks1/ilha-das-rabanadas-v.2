@@ -26,9 +26,9 @@
 				</h5>
 				<ul class="nav flex-column">
 					<li class="nav-item mb-2"><a href="../Home/home.jsp"
-						class="nav-link p-0 text-muted links">Home</a></li>
+						class="nav-link p-0 text-muted links"><b>Home </b></a></li>
 					<li class="nav-item mb-2"><a href="../Produto/Cardapio.jsp"
-						class="nav-link p-0 text-muted links">Cardápio</a></li>
+						class="nav-link p-0 text-muted links"><b> Cardápio</b></a></li>
 
 				</ul>
 			</div>
@@ -39,7 +39,7 @@
 				</h5>
 				<ul class="nav flex-column">
 					<li class="nav-item mb-2"><a href="../Sobre/Sobre.jsp"
-						class="nav-link p-0 text-muted links">Sobre a Ilha</a></li>
+						class="nav-link p-0 text-muted links"><b>Sobre a Ilha</b></a></li>
 
 
 				</ul>
@@ -57,6 +57,7 @@
 					<li class="nav-item mb-2 fs-2"><a href="#"
 						class="nav-link p-0 text-muted links"><i
 							class="bi bi-whatsapp"></i></a></li>
+							
 					<li class="nav-item mb-2 fs-2"><a href="#"
 						class="nav-link p-0 text-muted links"><i
 							class="bi bi-facebook"></i></a></li>
