@@ -21,7 +21,7 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="../public/css/produto/cardapio.css">
 <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-
+<link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
@@ -34,54 +34,35 @@
 	List<Produto> list = ProdutoDao.getAllProdutos();
 	request.setAttribute("list", list);
 	%>
+	<jsp:include page="../Headers/headerPadrao.jsp"></jsp:include>
 	<main>
 		<h1 class="text-center">Cardápio</h1>
-		<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
-			<c:forEach items="${list}" var="produto">
-				<div class="card">
-					<div class="card-img">
-						<img class="card-img-top " src="" alt="Title">
-					</div>
-					<div class="card-body ">
-						<h5 class="card-title fw-bold">${produto.getNomeProduto()}</h5>
-						<p class="card-text">${produto.getDescricao()}</p>
-						<p>${produto.getPreco()}</p>
-					</div>
-					<div
-						class="card-footer d-flex align-items-center justify-content-center gap-2">
-						<a id="edit" href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
-								class="btn btn-success">Encomendar</button></a>
+		<div class="container">
+			<div>
+				<h4 class="text-start">Rabanadas Doces</h4>
+				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
+					<c:forEach items="${list}" var="produto">
+						<div class="card">
+							<div class="card-img">
+								<img class="card-img-top " src="" alt="Title">
+							</div>
+							<div class="card-body ">
+								<h5 class="card-title fw-bold">${produto.getNomeProduto()}</h5>
+								<p class="card-text">${produto.getDescricao()}</p>
+								<p>${produto.getPreco()}</p>
+							</div>
+							<div
+								class="card-footer d-flex align-items-center justify-content-center gap-2">
+								<a id="edit"
+									href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+										class="btn btn-success">Encomendar</button></a>
 
-					</div>
+							</div>
+						</div>
+					</c:forEach>
 				</div>
-		</div>
-		</c:forEach>
-
-
-		</div>
-		<div id="Salgados">
-			<h3>Rabanadas Salgadas</h3>
-
-			<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
-
-
 			</div>
 		</div>
-		<div id="Vegana">
-			<h3>Rabanadas Veganas</h3>
-
-			<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
-
-
-			</div>
-		</div>
-		</div>
-
-
-
-
-
-
 	</main>
 
 	<!-- Bootstrap JavaScript Libraries -->
