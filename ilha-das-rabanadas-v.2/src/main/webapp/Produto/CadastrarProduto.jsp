@@ -27,10 +27,10 @@
     <main>
         <div id="container-form">
 
-            <form action="insert" method="POST" enctype="multipart/form-data" class="d-flex flex-column">
+            <form action="/cadastrarProduto" method="POST" enctype="multipart/form-data" class="d-flex flex-column">
                 <label for="nome">
                     <p>Nome</p>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nomeProduto">
 
                 </label>
                 <label for="descricao">
@@ -39,23 +39,24 @@
                     <input type="text" name="descricao" id="descricao">
 
                 </label>
-                <label for="descricao">
+                <label for="categoria">
                     <p>Categoria</p>
 
-                    <input type="text" name="tipo" id="tipo">
+                    <input type="text" name="categoria" id="tipo">
 
                 </label>
-                <label for="descricao">
+                <label for="valor">
                     <p>Valor</p>
 
                     <input type="text" name="preco" id="preco">
 
                 </label>
+                <!-- 
                 <label for="imagemProduto">
 
                     <p>Faça um upload de uma imagem</p>
                     <input type="file" name='arquivo' multiple>
-                </label>
+                </label> -->
                 <input type="submit" value="cadastrar">
             </form>
         </div>
