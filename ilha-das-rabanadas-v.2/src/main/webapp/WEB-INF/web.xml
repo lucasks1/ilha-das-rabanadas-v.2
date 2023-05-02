@@ -16,8 +16,8 @@
     <welcome-file>cardapio.jsp</welcome-file>
     <welcome-file>perfil.jsp</welcome-file>
     <welcome-file>perfil.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>CadastrarProduto.html</welcome-file>
+    <welcome-file>CadastrarProduto.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
 </web-app>

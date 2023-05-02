@@ -42,23 +42,80 @@
 				<h4 class="text-start">Rabanadas Doces</h4>
 				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
 					<c:forEach items="${list}" var="produto">
-						<div class="card">
-							<div class="card-img">
-								<img class="card-img-top " src="" alt="Title">
-							</div>
-							<div class="card-body ">
-								<h5 class="card-title fw-bold">${produto.getNomeProduto()}</h5>
-								<p class="card-text">${produto.getDescricao()}</p>
-								<p>${produto.getPreco()}</p>
-							</div>
-							<div
-								class="card-footer d-flex align-items-center justify-content-center gap-2">
-								<a id="edit"
-									href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
-										class="btn btn-success">Encomendar</button></a>
+						<c:if test="${produto.getCategoria()=='Doce'}">
+							<div class="card">
+								<div class="card-img">
+									<img class="card-img-top " src="${produto.getImagem()}"
+										alt="Title">
+								</div>
+								<div class="card-body ">
+									<h5 class="card-title fw-bold">${produto.getNomeProduto()}</h5>
+									<p class="card-text">${produto.getDescricao()}</p>
+									<p>${produto.getPreco()}</p>
+								</div>
+								<div
+									class="card-footer d-flex align-items-center justify-content-center gap-2">
+									<a id="edit"
+										href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+											class="btn btn-success">Encomendar</button></a>
 
+								</div>
 							</div>
-						</div>
+						</c:if>
+					</c:forEach>
+				</div>
+			</div>
+			<div>
+				<h4 class="text-start">Rabanadas Salgadas</h4>
+				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
+					<c:forEach items="${list}" var="produto">
+						<c:if test="${produto.getCategoria()=='Salgado'}">
+							<div class="card">
+								<div class="card-img">
+									<img class="card-img-top " src="${produto.getImagem()}"
+										alt="Title">
+								</div>
+								<div class="card-body ">
+									<h5 class="card-title fw-bold">${produto.getNomeProduto()}</h5>
+									<p class="card-text">${produto.getDescricao()}</p>
+									<p>${produto.getPreco()}</p>
+								</div>
+								<div
+									class="card-footer d-flex align-items-center justify-content-center gap-2">
+									<a id="edit"
+										href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+											class="btn btn-success">Encomendar</button></a>
+
+								</div>
+							</div>
+						</c:if>
+					</c:forEach>
+				</div>
+			</div>
+			<div>
+				<h4 class="text-start">Rabanadas Veganas</h4>
+				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
+					<c:forEach items="${list}" var="produto">
+						<c:if test="${produto.getCategoria()=='Vegana'}">
+							<div class="card">
+								<div class="card-img">
+									<img class="card-img-top " src="${produto.getImagem()}"
+										alt="Title">
+								</div>
+								<div class="card-body ">
+									<h5 class="card-title fw-bold">${produto.getNomeProduto()}</h5>
+									<p class="card-text">${produto.getDescricao()}</p>
+									<p>${produto.getPreco()}</p>
+								</div>
+								<div
+									class="card-footer d-flex align-items-center justify-content-center gap-2">
+									<a id="edit"
+										href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+											class="btn btn-success">Encomendar</button></a>
+
+								</div>
+							</div>
+						</c:if>
 					</c:forEach>
 				</div>
 			</div>
@@ -66,7 +123,7 @@
 	</main>
 
 
-<div id="doces"></div>
+	<div id="doces"></div>
 	<!-- Bootstrap JavaScript Libraries -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

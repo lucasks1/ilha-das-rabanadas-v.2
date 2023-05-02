@@ -14,7 +14,7 @@
 
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-	<link
+<link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
@@ -61,13 +61,14 @@
 	<section class="container-fluid corPrimaria py-3">
 		<div class="container">
 			<h1 class="text-center">Sobre a Ilha</h1>
-			
-			
-			
-			
-			
-			
-			<div class="row row-cols-2  align-items-center  flex-md-column flex-lg-row flex-column">
+
+
+
+
+
+
+			<div
+				class="row row-cols-2  align-items-center  flex-md-column flex-lg-row flex-column">
 				<div class="col">
 					<img id="img" src="../public/imgs/ilha/colaboradores.webp" alt=""
 						width="70%" class="img-fluid rounded">
@@ -85,18 +86,18 @@
 						natalino.</p>
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 	</section>
 
