@@ -5,7 +5,7 @@ import java.util.List;
 import com.ilhaDasRabanadas.bean.Produto;
 
 public class ProdutoDao extends Conexao {
-	public static  List<Produto> getAllProdutos() {
+	public static List<Produto> getAllProdutos() {
 		List<Produto> list = new ArrayList<Produto>();
 		try {
 			open();
@@ -29,5 +29,24 @@ public class ProdutoDao extends Conexao {
 			System.out.println(e);
 		}
 		return list;
+	}
+
+	public static void adicionar(Produto produto) {
+
+		try {
+			open();
+			String sql = "INSERT INTO `produto`(`nomeProduto`, `preco`, `descricao`, `categoria`) VALUES"
+					+ " (?,?,?,?)";
+			stmt = con.prepareStatement(sql);
+			stmt.setString(1, produto.getNomeProduto());
+			stmt.setString(2, produto.getPreco());
+			stmt.setString(3, produto.getDescricao());
+			stmt.setString(4, produto.getCategoria());
+			stmt.execute();
+		} catch (Exception e) {
+			System.out.println(produto.getNomeProduto());
+			System.out.println("error na inserção");
+			System.out.println(e);
+		}
 	}
 }
