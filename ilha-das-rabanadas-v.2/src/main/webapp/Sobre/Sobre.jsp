@@ -47,6 +47,14 @@
 .corSecundaria {
 	background-color: #FFBD59;
 }
+
+h1{
+
+font-weight:bold;
+}
+
+
+
 </style>
 
 </head>

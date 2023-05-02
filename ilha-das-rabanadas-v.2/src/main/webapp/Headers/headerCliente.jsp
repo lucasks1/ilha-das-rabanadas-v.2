@@ -6,11 +6,22 @@
 <meta charset="ISO-8859-1">
 <title>Home</title>
 </head>
+
+
+<style>
+
+nav{
+font-weight:bold;
+}
+
+</style>
+
+
 <body>
 
 <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <img width="10%" src="../public/imgs/img/logo-dashboards.webp" alt="">
+    <img width="15%" src="../public/imgs/img/logo-dashboards.webp" alt="">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

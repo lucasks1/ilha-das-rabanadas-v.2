@@ -69,3 +69,17 @@ main {
     transition: all ease-in-out linear;
     background-color: var(--hover)
 }
+
+@media(max-width:1200px){
+	.elemento
+	{
+	  width: 1000px;
+ }
+}
+
+@media(max-width:100px){
+	.elemento
+	{
+	  width: 800px;
+ }
+}

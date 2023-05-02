@@ -61,7 +61,7 @@
 						<img src="../public/imgs/img/rabanada/rabanada-vegana.webp" alt=""
 							class="fluid">
 						<div class="card-body" st>
-							<h5 class="card-title">Rabanadas veganas</h5>
+							<h5 class="card-title">Rabanadas Veganas</h5>
 						</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 
 		<div class="container p-3">
 			<h3 class="text-center my-3">
-				<b> Serviços prestados</b>
+				<b> Serviços Prestados</b>
 			</h3>
 
 			<div class="row justify-content-center align-items-center g-2">
@@ -100,23 +100,23 @@
 						<li class="d-flex align-items-center gap-2 "><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
-								Venda a varejo de produtos (Loja fisíca).</span></li>
+								VENDA A VAREJO DE PRODUTOS (LOJA FÍSICA).</span></li>
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
-								Venda de serviços para buffet</span></li>
+								VENDA DE SERVIÇOS PARA BUFFET</span></li>
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
-								Serviço de delivery própio</span></li>
+								SERVIÇO DE DELIVERY PRÓPRIO</span></li>
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
-								Produtos personalizados</span></li>
+								PRODUTOS PERSONALIZADOS</span></li>
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
-								Alimentos fitness</span></li>
+								ALIMENTOS FITNESS</span></li>
 					</ul>
 				</div>
 				<div class="col d-flex justify-content-center">
@@ -142,7 +142,7 @@
 			</h1>
 			<a href="../Sobre/Sobre.jsp"><button id="btn-sobre"
 					class=" rounded-pill  btn btn-success body">
-					<b>Sobre nós</b>
+					<b>SOBRE NÓS</b>
 				</button></a>
 		</div>
 	</section>

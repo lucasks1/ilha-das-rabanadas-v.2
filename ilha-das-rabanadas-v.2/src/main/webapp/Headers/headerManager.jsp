@@ -6,6 +6,13 @@
 <meta charset="ISO-8859-1">
 <title>Home</title>
 </head>
+<style>
+
+nav{
+font-weight:bold;
+}
+
+</style>
 <body>
 
  <script>
