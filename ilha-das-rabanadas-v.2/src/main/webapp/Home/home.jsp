@@ -6,7 +6,7 @@
 
 <head>
 
-<title>Ilhas das Rabanadas</title>
+<title>Ilha das Rabanadas</title>
 
 
 <!-- Required meta tags -->
@@ -19,10 +19,11 @@
 	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 	crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../public/css/home/home.css">
-  	<link rel="stylesheet" href="../public/css/style.css">
-  	<link rel="icon" href="../public/imgs/img/palmeira.png">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../public/css/home/home.css">
+<link rel="stylesheet" href="../public/css/style.css">
+<link rel="icon" href="../public/imgs/img/palmeira.png">
 
 
 </head>
@@ -32,11 +33,14 @@
 
 
 	<jsp:include page="../Headers/headerPadrao.jsp"></jsp:include>
-<a href="../Produto/Cardapio.jsp#doces">TESTE</a>
 
 	<section>
 		<div id="boas-vindas-banner"
 			class=" banner container-fluid d-flex align-items-center justify-content-center body">
+
+			<video autoplay loop muted plays-inline>
+			<source src="../public/videos/rabanada-view.mp4">
+			</video>
 			<h1 class="text-white">
 				<b> Ilha das Rabanadas</b>
 				<p>
@@ -144,19 +148,21 @@
 	</section>
 
 
-  <jsp:include page="../Footers/footer.jsp"></jsp:include>
+	<jsp:include page="../Footers/footer.jsp"></jsp:include>
 	<!-- Bootstrap JavaScript Libraries -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
 		crossorigin="anonymous">
-    </script>
+		
+	</script>
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 		integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
 		crossorigin="anonymous">
-    </script>
+		
+	</script>
 	<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 
 </body>
