@@ -45,7 +45,7 @@
 						<c:if test="${produto.getCategoria()=='Doce'}">
 							<div class="card">
 								<div class="card-img">
-									<img class="card-img-top " src="${produto.getImagem()}"
+									<img class="card-img-top" src="${produto.getImagem()}"
 										alt="Title">
 								</div>
 								<div class="card-body ">

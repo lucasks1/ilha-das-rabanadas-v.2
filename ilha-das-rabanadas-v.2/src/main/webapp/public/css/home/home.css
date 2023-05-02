@@ -18,8 +18,13 @@ section {
 
 h1 {
 	text-align: center;
+	font-weight:bold;
 }
+h3, h2, h4, h5, h1 {
+	
+	font-weight:bold;
 
+}
 h1>p {
 	font-size: 25px;
 }
@@ -38,11 +43,13 @@ h1>p {
 
 #secao-servico {
 	background-color: rgba(217, 180, 72, 0.3);
+	color: white;
 }
 
 /* sobre */
 #sobre-banner {
 	background-image: url("../../imgs/img/sobre.webp");
+	
 }
 
 #btn-sobre {

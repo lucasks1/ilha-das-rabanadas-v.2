@@ -63,7 +63,7 @@
         </div>
       </form>
       <a class="nav-link links mt-3" href="../Home/home.jsp">
-        <h6>Retornar ao site</h6>
+        <h6> <b> Retornar ao site</b></h6>
       </a>
     </div>
 
