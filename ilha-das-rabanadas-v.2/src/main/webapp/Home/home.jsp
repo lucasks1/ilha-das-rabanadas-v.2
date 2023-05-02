@@ -6,7 +6,7 @@
 
 <head>
 
-<title>Ilhas das Rabanadas</title>
+<title>Ilha das Rabanadas</title>
 
 
 <!-- Required meta tags -->
