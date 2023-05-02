@@ -56,7 +56,7 @@
 								<div
 									class="card-footer d-flex align-items-center justify-content-center gap-2">
 									<a id="edit"
-										href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+										href="../Login/login.jsp"><button
 											class="btn btn-success">Encomendar</button></a>
 
 								</div>
@@ -83,7 +83,7 @@
 								<div
 									class="card-footer d-flex align-items-center justify-content-center gap-2">
 									<a id="edit"
-										href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+										href="../Login/login.jsp"><button
 											class="btn btn-success">Encomendar</button></a>
 
 								</div>
@@ -110,7 +110,7 @@
 								<div
 									class="card-footer d-flex align-items-center justify-content-center gap-2">
 									<a id="edit"
-										href="../carrinho/index?id=<?php echo $idProduto; ?>"><button
+										href="../Login/login.jsp"><button
 											class="btn btn-success">Encomendar</button></a>
 
 								</div>
