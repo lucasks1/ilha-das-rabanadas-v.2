@@ -87,5 +87,8 @@ public class Cliente {
 		this.login = login;
 		
 	}
+	public Cliente() {
+		// TODO Auto-generated constructor stub
+	}
 	
 }
