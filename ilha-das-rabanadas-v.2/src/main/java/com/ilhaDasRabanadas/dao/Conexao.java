@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 import java.sql.*;
 
-public class Conexao {
+public   class Conexao {
 	protected static PreparedStatement stmt;// linguagem sql
 	protected static ResultSet rs; // atingir o banco
 	protected static Connection con;// conexão
@@ -16,7 +16,7 @@ public class Conexao {
 	private final static String user = "root";
 	private final static String pass = "";
 
-	protected void open() {
+	protected static void open() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection(url, user, pass);

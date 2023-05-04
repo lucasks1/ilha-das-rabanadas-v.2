@@ -15,16 +15,16 @@ section {
 }
 
 /* boas vindas */
-
 h1 {
+	text-color: black; text-align : center;
+	font-weight: bold;
 	text-align: center;
-	font-weight:bold;
 }
-h3, h2, h4, h5, h1 {
-	
-	font-weight:bold;
 
+h3, h2, h4, h5, h1 {
+	font-weight: bold;
 }
+
 h1>p {
 	font-size: 25px;
 }
@@ -42,14 +42,11 @@ h1>p {
 }
 
 #secao-servico {
-	background-color: rgba(217, 180, 72, 0.3);
-	color: white;
-}
+	background-color: rgba(217, 180, 72, 0.3);}
 
 /* sobre */
 #sobre-banner {
 	background-image: url("../../imgs/img/sobre.webp");
-	
 }
 
 #btn-sobre {
@@ -73,16 +70,11 @@ h1>p {
 	background-color: white;
 }
 
-video{
-	
-		position: fixed; 
-			right: 0; 
-			bottom: 0;
-			min-width: 100%; 
-			min-height: 100%;
-			width: auto; 
-			height: auto; 
-			z-index: -1000;
-			background: url(images/torre.jpg) no-repeat;
-			background-size: cover;
+video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1000;
 }

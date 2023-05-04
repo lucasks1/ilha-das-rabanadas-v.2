@@ -44,15 +44,15 @@ public class ClienteServelet extends HttpServlet {
 			String url = request.getServletPath();
 			if(url.equalsIgnoreCase("/cadastrarCliente")) {
 			
-				cadastrar(request,response);
+				 //cadastrar(request,response);
 			}else if(url.equalsIgnoreCase("/buscarCliente")) {
-				buscar(request,response);
+				//buscar(request,response);
 			}else if(url.equalsIgnoreCase("adicionarCliente")) {
-				adicionar(request,response);
+				//adicionar(request,response);
 			}else if(url.equalsIgnoreCase("/editarCliente")) {
-				editar(request,response);
+				//editar(request,response);
 		}else if(url.equalsIgnoreCase("/excluirCliente")) {
-			excluir(request,response);
+			//excluir(request,response);
 		
 	}
 		else {

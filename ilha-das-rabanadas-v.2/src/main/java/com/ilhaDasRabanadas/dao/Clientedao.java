@@ -13,7 +13,9 @@ public class Clientedao extends Conexao {
 			stmt = con.prepareStatement(sql);
 			stmt.setString(1, cliente.getNomeCliente());
 			
-		}
+		}catch (Exception e) {
+			// TODO: handle exception
+		} 
 	}
 
 }
