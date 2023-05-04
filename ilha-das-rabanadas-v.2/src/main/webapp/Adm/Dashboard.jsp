@@ -1,68 +1,66 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-<title>Ilhas das Rabanadas</title>
+    <title>Ilhas das Rabanadas</title>
 
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Bootstrap CSS v5.2.1 -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-	crossorigin="anonymous">
-
-<link rel="stylesheet" href="../public/css/dashboards/dashboard.css">
-<link rel="stylesheet" href="../public/css/style.css">
-<link rel="icon" href="../public/imgs/img/palmeira.png">
-<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../public/css/tablet-style.css">
+    <link rel="stylesheet" href="../public/css/dashboards/dashboard.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" href="../public/imgs/img/palmeira.png">
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 
 
-
+   
 </head>
+
 <body>
 
-<jsp:include page="../Headers/header-dashboards.jsp"></jsp:include>
+    <jsp:include page="../Headers/header-dashboards.jsp"></jsp:include>
 
-	<main>
-		<h1 class="text-center my-4">Seu dashboard</h1>
-		<div class="container">
-			<div id="container-cards" class=" d-flex  justify-content-evenly">
-				<div class="card">
-					<div class="card-body ">
-						<div class="icon text-center">
-							<i><lord-icon src="https://cdn.lordicon.com/ogkplaef.json"
-									trigger="morph" style="width:80px;height:80px"> </lord-icon></i>
-						</div>
+    <main>
+        <h1 class="text-center my-4">Seu dashboard</h1>
+        <div class="container">
+            <div id="container-cards" class="d-flex flex-wrap justify-content-evenly">
+                <div class="card col-lg-5 col-md-6 col-sm-12">
+                    <div class="card-body ">
+                        <div class="icon text-center">
+                            <i><lord-icon src="https://cdn.lordicon.com/ogkplaef.json" trigger="morph"
+                                    style="width:80px;height:80px"></lord-icon></i>
+                        </div>
 
-						<h4>햞ea de Pedidos</h4>
+                        <h4>햞ea de Pedidos</h4>
 
-					</div>
-					<div class="card-footer">
-						<a href="../Adm/Pedidos.jsp"><button class="btn btn-success">Acessar</button></a>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-body ">
-						<div class="icon text-center">
-							<i><lord-icon src="https://cdn.lordicon.com/pmegrqxm.json"
-									trigger="hover" style="width:80px;height:80px"> </lord-icon></i>
-						</div>
-						<h4>햞ea de produtos</h4>
-					</div>
-					<div class="card-footer">
-						<a href="../Adm/Produtos.jsp"><button class="btn btn-success">Acessar</button></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+                    </div>
+                    <div class="card-footer">
+                        <a href="../Adm/Pedidos.jsp"><button class="btn btn-success">Acessar</button></a>
+                    </div>
+                </div>
+                <div class="card col-lg-5 col-md-6 col-sm-12">
+                    <div class="card-body ">
+                        <div class="icon text-center">
+                            <i><lord-icon src="https://cdn.lordicon.com/pmegrqxm.json" trigger="hover"
+                                    style="width:80px;height:80px"></lord-icon></i>
+                        </div>
+                        <h4>햞ea de produtos</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="../Adm/Produtos.jsp"><button class="btn btn-success">Acessar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 	<!-- Bootstrap JavaScript Libraries -->
 	<script

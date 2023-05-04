@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+/*
+RESPONSIVIDADE PARA O CSS PADRAO TABLET
+*/
+
+@media screen and (max-width: 768px) {
+	.card {
+		margin-bottom: 1.5rem;
+	}
+}
+
