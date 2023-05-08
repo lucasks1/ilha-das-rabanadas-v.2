@@ -35,13 +35,14 @@ public class ProdutoDao extends Conexao {
 
 		try {
 			open();
-			String sql = "INSERT INTO `produto`(`nomeProduto`, `preco`, `descricao`, `categoria`) VALUES"
-					+ " (?,?,?,?)";
+			String sql = "INSERT INTO `produto`(`nomeProduto`, `preco`, `descricao`,`imagem`,`categoria`) VALUES"
+					+ "(?,?,?,?,?)";
 			stmt = con.prepareStatement(sql);
 			stmt.setString(1, produto.getNomeProduto());
 			stmt.setString(2, produto.getPreco());
 			stmt.setString(3, produto.getDescricao());
-			stmt.setString(4, produto.getCategoria());
+			stmt.setString(4, produto.getImagem());
+			stmt.setString(5,produto.getCategoria());
 			stmt.execute();
 		} catch (Exception e) {
 			System.out.println(produto.getNomeProduto());

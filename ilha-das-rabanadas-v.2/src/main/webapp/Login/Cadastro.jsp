@@ -46,7 +46,7 @@
   <div class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
     <h1 class="text-center">Cadastro</h1>
     <h5 class="text-danger">Obs: só fazemos entregas em Nova Iguaçu!</h5>
-    <form action="insert" method="POST" class="rounded">
+    <form action="/ilhaDasRabanadas/Login/ClienteServlet" method="POST" class="rounded">
       <div class="mb-4 row">
       
 
@@ -66,7 +66,7 @@
 
         <div class="col-6">
           <label for="numeroCelular" class="form-label">Telefone celular</label>
-          <input type="text" required name="numeroCelular" id="numeroCelular" class="form-control" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required="required">
+          <input type="text" required name="numeroCliente" id="numeroCelular" class="form-control" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required="required">
         </div>
       </div>
 

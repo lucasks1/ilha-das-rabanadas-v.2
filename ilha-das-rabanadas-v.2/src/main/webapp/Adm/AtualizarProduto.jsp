@@ -4,8 +4,7 @@
 <html lang="pt-br">
 
 <head>
-<title>Cadastro</title>
-
+<title>Ilhas das Rabanadas</title>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -20,19 +19,14 @@
 
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
 <link rel="stylesheet" href="../public/css/form/forms.css">
 <link rel="stylesheet" href="../public/css/style.css">
 <link rel="icon" href="../public/imgs/img/palmeira.png">
 
 </head>
-
-
-
-
 <body>
-
-
-
+<body>
 	<div class="container-fluid " id="header">
 		<header
 			class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -47,52 +41,52 @@
 			</a>
 
 			<div class="col-md-3 text-center m-auto">
-				<img width="80%" src="../public/imgs/img/logo-dashboards.webp"
+				<img width="60%" src="../public/imgs/img/logo-dashboards.webp"
 					alt="">
 			</div>
 		</header>
 	</div>
 	<div
 		class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
-		<h1 class="text-center">Cadastro</h1>
-		<form action="../ProdutoServlet" method="POST" enctype="multipart/form-data" >
+		<h1 class="text-center">Atualizar Produto</h1>
+		<form action="/AtualizarProduto" method="POST"
+			enctype="multipart/form-data">
+			<input type="hidden" name='id' >
 			<div class="mb-3 box-inputs">
 				<label for="nomeProduto" class="form-label">Nome do Produto</label>
-				<input type="text" name="nomeProduto" id="nomeProduto"
-					class="form-control" required placeholder=""
+				<input type="text" required name="nomeProduto" id="nomeProduto"
+					class="form-control" value="" placeholder=""
 					aria-describedby="helpId">
 			</div>
 			<div class="mb-3 box-inputs">
-				<label for="descricao" class="form-label">Descrição do
-					Produto</label> <input type="text" name="descricao" id="descricao"
-					class="form-control" required placeholder=""
+				<label for="descricao" class="form-label">Descriçao Produto</label>
+				<input type="text" required name="descricao" id="descricao"
+					class="form-control" placeholder="" value=""
 					aria-describedby="helpId">
 			</div>
 			<div class="mb-3 box-inputs">
 				<label for="preco" class="form-label">Preço do produto</label> <input
-					type="text" name="preco" id="preco" class="form-control" required
+					type="text" required name="preco" id="preco" class="form-control"
 					placeholder="" aria-describedby="helpId">
 			</div>
 			<div class="mb-3 box-inputs">
 				<label for="categoria" class="form-label">Categoria do
-					produto</label> <input type="text" name="categoria" id="categoria"
-					class="form-control" required placeholder="Doce,salgado,vegano ..."
+					produto</label> <input type="text" required name="categoria" id="categoria"
+					class="form-control" placeholder="Doce,salgado,vegano ..." value=""
 					aria-describedby="helpId">
 			</div>
-
 			<div class="mb-3 box-inputs">
 				<label for="imagemProduto" class="form-label">Imagem do
-					produto</label> <input type="file" name="imagem" class='form-control'
-					required>
+					produto</label> <input required type="file" name='arquivo'
+					class='form-control'>
 
 			</div>
 			<div id="button-submit " class="d-flex justify-content-center">
-				<input id="cadastrar" class="btn" type="submit"
-					name='enviar-formulario' value="Cadastrar">
+				<input id="finalizar" class="btn" type="submit"
+					name='enviar-formulario' value="Finalizar">
 			</div>
 		</form>
 	</div>
-	<script type="text/javascript" src="../public/js/validarProduto.js"></script>
 	<!-- Bootstrap JavaScript Libraries -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -108,6 +102,8 @@
 		
 	</script>
 	<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
 </body>
 
 </html>
+

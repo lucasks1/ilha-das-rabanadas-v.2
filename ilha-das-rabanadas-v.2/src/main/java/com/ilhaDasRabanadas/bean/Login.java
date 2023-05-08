@@ -23,10 +23,11 @@ public class Login {
 		this.senha = senha;
 	}
 	
-	public Login(int idLogin,String login,String senha) {
+	public Login() {
 		this.idLogin = idLogin;
 		this.login = login;
 		this.senha = senha;
 	}
+	
 
 }

@@ -19,5 +19,8 @@
     <welcome-file>CadastrarProduto.html</welcome-file>
     <welcome-file>CadastrarProduto.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
+      <welcome-file>default.jsp</welcome-file>
+    <welcome-file>AtualizarProduto.html</welcome-file>
+    <welcome-file>AtualizarProduto.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
