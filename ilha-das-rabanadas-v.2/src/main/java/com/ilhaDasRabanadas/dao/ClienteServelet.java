@@ -1,94 +1,74 @@
 package com.ilhaDasRabanadas.dao;
 
+import java.io.File;
 import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.sql.SQLException;
 
 import com.ilhaDasRabanadas.bean.Cliente;
 
-@WebServlet(name = "/ClienteServlet")
-public class ClienteServelet extends HttpServlet {
+@WebServlet("/ClienteServlet")
+@MultipartConfig
+
+
+public class ClienteServelet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
-
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		executar(request, response);
-	}
-
 	
-
+	protected void doGet(HttpRequest request, HttpResponse response)
+			throws SQLException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at:").append(request.getContextPath());
 		
+
+	}
 	
-
-	public void executar(HttpServletRequest request, HttpServletResponse response)
-			{
-
+	protected void doPost(HttpRequest request, HttpResponse response)
+			throws SQLException, IOException {
+		doGet(request, response);
 		try {
-			String url = request.getServletPath();
-			if (url.equalsIgnoreCase("/clienteServlet")) {
-
-				 cadastrar(request,response);
-			} else if (url.equalsIgnoreCase("/buscarCliente")) {
-				// buscar(request,response);
-			} else if (url.equalsIgnoreCase("adicionarCliente")) {
-				// adicionar(request,response);
-			} else if (url.equalsIgnoreCase("/editarCliente")) {
-				// editar(request,response);
-			} else if (url.equalsIgnoreCase("/excluirCliente")) {
-				// excluir(request,response);
-
-			} else {
-				throw new Exception("URL Inválida");
-			}
-
-		} catch (Exception e) {
-			//response.sendRedirect("Cadastro.jsp");
-			e.printStackTrace();
-
+		String url = request.getServletPath();
+		if(url.equalsIgnoreCase("/ClienteServlet")) {
+			cadastrar(request,response);
+		}else {
+			throw new Exception("Url invalida");
 		}
-	}
+		}catch(Exception e) {
+			response.sendRedirect("Cadastro.jsp");
+			e.printStackTrace();
+		}
+}
 
-	protected void cadastrar(HttpServletRequest request, HttpServletResponse response)
-			 {
-String nome = request.getParameter("nome");
-String sobrenome = request.getParameter("sobrenome");
-String numeroCliente = request.getParameter("numeroCliente");
-String cep = request.getParameter("cep");
-String bairro = request.getParameter("bairro");
-String numero = request.getParameter("numero");
-String cidade = request.getParameter("cidade");
-
-
-		Cliente cliente = new Cliente();
+	private void cadastrar(HttpRequest request, HttpResponse response) 
+		// TODO Auto-generated method stub
+		throws SQLException, IOException{
 		
+		String nome = request.getParameter("nome");
+		String sobrenome = request.getParameter("sobrenome");
+		String numeroCliente = request.getParameter("numeroCliente");
+		String cep = request.getParameter("cep");
+		String rua = request.getParameter("rua");
+		String bairro = request.getParameter("bairro");
+		String numero = request.getParameter("numero");
+		String cidade = request.getParameter("cidade");
 		
+		Cliente  cliente = new Cliente();
 		cliente.setNomeCliente(nome);
 		cliente.setSobreNome(sobrenome);
 		cliente.setNumeroCliente(numeroCliente);
 		cliente.setCep(cep);
+		cliente.setRua(rua);
 		cliente.setBairro(bairro);
 		cliente.setNumero(numero);
 		cliente.setCidade(cidade);
 		
-		
-		
-
 		try {
 			Clientedao clientedao = new Clientedao();
 			clientedao.adicionar(cliente);
-			response.sendRedirect("Home/home.jsp");
-		} catch (Exception e) {
-			e.printStackTrace();
-			
-		} 
-
+		}catch(Exception e) {
+			request.setAttribute("msg", "Falha ao adicionar!");
+			response.sendRedirect("Cadastro.jsp");
+		}
 	}
-
 }
+
