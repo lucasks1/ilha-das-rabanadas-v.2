@@ -29,15 +29,10 @@ public class ProdutoServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-	}
-
-	
-
-	private void AtualizarProduto(HttpServletRequest request, HttpServletResponse response) {
-		// TODO Auto-generated method stub
 
 	}
+
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -48,13 +43,13 @@ public class ProdutoServlet extends HttpServlet {
 		// Obtém o nome original do arquivo
 		String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString();
 
-		String path = getServletContext().getRealPath("../rabanada/upload-");
+		String path = getServletContext().getRealPath("/uploads-rabanadas/upload-");
 		// Grava o arquivo em disco
 		File file = new File(path + fileName);
 		try (InputStream fileContent = filePart.getInputStream()) {
-
+			System.out.println(path);
 			Files.copy(fileContent, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
-			imageDb = "http://localhost:8080/upload/rabanada/upload-" + fileName;
+			imageDb = "http://localhost:8080/ilhaDasRabanadas/uploads-rabanadas/upload-" + fileName;
 			System.out.println(imageDb);
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -62,7 +57,7 @@ public class ProdutoServlet extends HttpServlet {
 		}
 		// =====================================================
 
-		String nomeProduto =request.getParameter("nomeProduto");
+		String nomeProduto = request.getParameter("nomeProduto");
 		String descricao = request.getParameter("descricao");
 		String categoria = request.getParameter("categoria");
 		String preco = request.getParameter("preco");
@@ -72,15 +67,16 @@ public class ProdutoServlet extends HttpServlet {
 		produto.setCategoria(categoria);
 		produto.setDescricao(descricao);
 		produto.setPreco(preco);
-		
+
 		produto.setImagem(imageDb);
 		try {
 			ProdutoDao produtoDao = new ProdutoDao();
 			ProdutoDao.adicionar(produto);
-			response.sendRedirect("Home/home.jsp");
+			request.setAttribute("msg", "Adicionado com sucesso");
+			response.sendRedirect("Adm/Produtos.jsp");
 		} catch (Exception e) {
-			System.out.println("errorrrr");
+			request.setAttribute("msg", "Falha ao adicionar!");
+			response.sendRedirect("Adm/Produtos.jsp");
 		}
 	}
-
 }

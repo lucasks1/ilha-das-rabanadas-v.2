@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -25,8 +26,18 @@
 <link rel="icon" href="../public/imgs/img/palmeira.png">
 
 </head>
+
 <body>
-<body>
+	<%@ page import="com.ilhaDasRabanadas.bean.Produto"%>
+
+	<%@ page import="com.ilhaDasRabanadas.dao.ProdutoDao"%>
+	<%@ page import="java.util.*"%>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	<%
+	Produto produto = ProdutoDao.getElementById(request.getParameter("id"));
+	request.setAttribute("produto", produto);
+	
+	%>
 	<div class="container-fluid " id="header">
 		<header
 			class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -49,43 +60,48 @@
 	<div
 		class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
 		<h1 class="text-center">Atualizar Produto</h1>
-		<form action="/AtualizarProduto" method="POST"
-			enctype="multipart/form-data">
-			<input type="hidden" name='id' >
-			<div class="mb-3 box-inputs">
-				<label for="nomeProduto" class="form-label">Nome do Produto</label>
-				<input type="text" required name="nomeProduto" id="nomeProduto"
-					class="form-control" value="" placeholder=""
-					aria-describedby="helpId">
-			</div>
-			<div class="mb-3 box-inputs">
-				<label for="descricao" class="form-label">Descriçao Produto</label>
-				<input type="text" required name="descricao" id="descricao"
-					class="form-control" placeholder="" value=""
-					aria-describedby="helpId">
-			</div>
-			<div class="mb-3 box-inputs">
-				<label for="preco" class="form-label">Preço do produto</label> <input
-					type="text" required name="preco" id="preco" class="form-control"
-					placeholder="" aria-describedby="helpId">
-			</div>
-			<div class="mb-3 box-inputs">
-				<label for="categoria" class="form-label">Categoria do
-					produto</label> <input type="text" required name="categoria" id="categoria"
-					class="form-control" placeholder="Doce,salgado,vegano ..." value=""
-					aria-describedby="helpId">
-			</div>
-			<div class="mb-3 box-inputs">
-				<label for="imagemProduto" class="form-label">Imagem do
-					produto</label> <input required type="file" name='arquivo'
-					class='form-control'>
+		<p></p>
+			<form action="../ProdutoEditServlet" method="POST"
+				enctype="multipart/form-data">
+			<input name="idProduto" type="hidden" value="${produto.getIdProduto()}">
+				<div class="mb-3 box-inputs">
 
-			</div>
-			<div id="button-submit " class="d-flex justify-content-center">
-				<input id="finalizar" class="btn" type="submit"
-					name='enviar-formulario' value="Finalizar">
-			</div>
-		</form>
+					<label for="nomeProduto" class="form-label">Nome do Produto</label>
+					<input type="text" name="nomeProduto" id="nomeProduto"
+						class="form-control" required placeholder=""
+						aria-describedby="helpId" value="${produto.getNomeProduto()}">
+				</div>
+				<div class="mb-3 box-inputs">
+					<label for="descricao" class="form-label">Descrição do
+						Produto</label> <input  type="text" value="${produto.getDescricao()}" name="descricao" id="descricao"
+						class="form-control" required placeholder=""
+						aria-describedby="helpId">
+				</div>
+				<div class="mb-3 box-inputs">
+					<label for="preco" class="form-label">Preço do produto</label> <input
+						type="text" name="preco" id="preco" value="${produto.getPreco()}" class="form-control" required
+						placeholder="" aria-describedby="helpId">
+				</div>
+				<div class="mb-3 box-inputs">
+					<label for="categoria" class="form-label">Categoria do
+						produto</label> <input type="text" value="${produto.getCategoria()}" name="categoria" id="categoria"
+						class="form-control" required
+						placeholder="Doce,salgado,vegano ..." aria-describedby="helpId">
+				</div>
+
+				<div class="mb-3 box-inputs">
+					<label for="imagemProduto" class="form-label">Imagem do
+						produto</label> <input type="file" name="imagem" class='form-control'
+						required>
+
+				</div>
+				<div id="button-submit " class="d-flex justify-content-center">
+					<input id="cadastrar" class="btn" type="submit"
+						name='enviar-formulario' value="Cadastrar">
+				</div>
+
+			</form>
+	
 	</div>
 	<!-- Bootstrap JavaScript Libraries -->
 	<script
