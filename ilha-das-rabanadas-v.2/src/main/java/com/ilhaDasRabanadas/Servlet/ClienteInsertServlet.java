@@ -72,8 +72,9 @@ public class ClienteInsertServlet extends HttpServlet {
 		String bairro = request.getParameter("bairro");
 		String cep  = request.getParameter("cep");
 		String cidade = request.getParameter("cidade");
+		//==========================
 		Cliente cliente = new Cliente();
-		cliente.setIdCliente(loginDb.getIdLogin());
+		cliente.setIdLogin(loginDb.getIdLogin());
 		cliente.setNomeCliente(nome);
 		cliente.setSobreNome(sobrenome);
 		cliente.setNumeroCliente(numeroCliente);

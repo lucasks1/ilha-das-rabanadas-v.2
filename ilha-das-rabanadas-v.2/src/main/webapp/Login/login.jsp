@@ -41,7 +41,7 @@
         <img src="../public/imgs/img/logo-dashboards.webp" alt="" width="70%">
       </div>
       
-      <form method="POST" class="d-flex justify-content-center align-items-center flex-column">
+      <form action="../LoginAuthentication" method="POST" class="d-flex justify-content-center align-items-center flex-column">
         <div class="inputs mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" name="email" id="email" placeholder="abc@mail.com">
@@ -49,7 +49,7 @@
         
         <div class="inputs mb-3">
           <label for="" class="form-label">Senha</label>
-          <input type="password" class="form-control" name="password" id="password" placeholder="">
+          <input type="password" class="form-control" name="senha" id="password" placeholder="">
         </div>
         
         <p style=" width: max-content;" class="text-danger">

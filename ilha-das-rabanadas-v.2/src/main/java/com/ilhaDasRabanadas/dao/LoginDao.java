@@ -22,14 +22,15 @@ public class LoginDao extends Conexao {
 		Login login = new Login();
 		try {
 			open();
-			String sql = "SELECT idLogin FROM `login` WHERE login=(?)";
+			String sql = "SELECT * FROM `login` WHERE login=(?)";
 			stmt = con.prepareStatement(sql);
 			stmt.setString(1, email);
 			rs = stmt.executeQuery();
 			while (rs.next()) {
-				
-				
 				login.setIdLogin(rs.getInt("idLogin"));
+
+				login.setEmail(rs.getString("login"));
+				login.setPassword(rs.getString("senha"));
 
 			}
 
@@ -38,6 +39,34 @@ public class LoginDao extends Conexao {
 			System.out.println(e.getMessage());
 		}
 
+		return login;
+
+	}
+
+	public static  Login Authentication(String email, String senha) {
+		
+		Login login= new Login();
+		
+		try {
+			open();
+			String sql = "SELECT * FROM `login` WHERE login=? AND senha=?";
+			stmt = con.prepareStatement(sql);
+			stmt.setString(1, email);
+			stmt.setString(2, senha);
+			
+			rs = stmt.executeQuery();
+			while (rs.next()) {
+				login.setIdLogin(rs.getInt("idLogin"));
+
+				System.out.println(rs.getString("login"));
+				System.out.println(rs.getString("senha"));
+				
+
+			}
+		} catch (Exception e) {
+			// TODO: ha	System.out.println("erro no servlet ><");ndle exception
+			
+		}
 		return login;
 
 	}

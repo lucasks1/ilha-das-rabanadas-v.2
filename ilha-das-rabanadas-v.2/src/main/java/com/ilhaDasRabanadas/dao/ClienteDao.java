@@ -9,8 +9,7 @@ public class ClienteDao extends Conexao {
 		String idLogin = Integer.toString(cliente.getIdLogin());
 		try {
 			open();
-			String sql = "INSERT INTO `cliente`(`nomeCliente`, `sobrenome`,"
-					+ " `numeroCliente`, `cep`, `rua`, `bairro`, `numero`, " + "`cidade`, `idLogin`)"
+			String sql = "INSERT INTO `cliente`(`nomeCliente`, `sobrenome`, `numeroCliente`, `cep`, `rua`, `bairro`, `numero`, `cidade`, `idLogin`)"
 					+ "VALUES (?,?,?,?,?,?,?,?,?)";
 
 			stmt = con.prepareStatement(sql);
@@ -27,10 +26,41 @@ public class ClienteDao extends Conexao {
 			stmt.execute();
 
 		} catch (Exception e) {
-			System.out.println(cliente.getNomeCliente());
+			System.out.println(idLogin);
 			System.out.println("error na insersasção");
 			System.out.println(e);
 		}
+	}
+
+	
+	public static Cliente getElementById(String idCliente) {
+		Cliente cliente = new Cliente();
+
+		try {
+			open();
+
+			String sql = "SELECT * FROM `cliente` WHERE idCliente=?";
+			stmt.setString(1, idCliente);
+			rs = stmt.executeQuery();
+
+			while (rs.next()) {
+
+				cliente.setIdCliente(rs.getInt("idCliente"));
+				cliente.setNomeCliente(rs.getString("nomeCliente"));
+				cliente.setSobreNome(rs.getString("sobrenome"));
+				cliente.setNumeroCliente(rs.getString("numeroCliente"));
+				cliente.setCep(rs.getString("cep"));
+				cliente.setRua(rs.getString("rua"));
+				cliente.setBairro(rs.getString("bairro"));
+				cliente.setNumero(rs.getString("numero"));
+				cliente.setCidade(rs.getString("cidade"));
+
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+		return cliente;
 	}
 
 }
