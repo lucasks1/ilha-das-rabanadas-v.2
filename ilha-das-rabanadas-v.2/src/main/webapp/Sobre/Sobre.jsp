@@ -21,7 +21,7 @@
 	crossorigin="anonymous">
 <link rel="stylesheet" href="../public/css/sobre/sobre.css">
 <link rel="stylesheet" href="../public/css/style.css">
-<link rel="stylesheet" href="../public/css/tablet-sobre.css">
+<link rel="stylesheet" href="../public/css/table-sobre.css">
 <link rel="icon" href="../public/imgs/img/palmeira.png">
 
 <link
@@ -36,8 +36,9 @@
 
 
 <style>
-.text {
+.text,span {
 	text-align: justify;
+	font-size: 20px;
 }
 
 .corPrimaria {
@@ -55,11 +56,13 @@ font-weight:bold;
 
 
 
+
 </style>
 
 </head>
 
 <body>
+
 
 	<jsp:include page="../Headers/headerPadrao.jsp"></jsp:include>
 
@@ -115,7 +118,12 @@ font-weight:bold;
 	<section class="container-fluid corSecundaria py-3">
 		<div class="container">
 			<h1 class="text-center">Nossa missão</h1>
-			<div class="row align-items-center">
+			<div
+				class="row row-cols-2  align-items-center  flex-md-column flex-lg-row flex-column">
+			<div class="col">
+					<img id="img" src="../public/imgs/3.webp" alt="" width="70%"
+						class="img-fluid">
+				</div>
 
 				<div class="col">
 					<p class=" text">A missão da Ilha é proporcionar sabores
@@ -129,10 +137,7 @@ font-weight:bold;
 						2028, fazendo que elas sejam consumidas não apenas em período
 						natalino.</p>
 				</div>
-				<div class="col">
-					<img id="img" src="../public/imgs/3.webp" alt="" width="70%"
-						class="img-fluid">
-				</div>
+				
 			</div>
 		</div>
 
@@ -142,8 +147,8 @@ font-weight:bold;
 	<section class="container-fluid corPrimaria py-3">
 		<div class="container">
 			<h1 class="text-center">Nossos valores</h1>
-			<div class="row align-items-center">
-				<div class="col-6">
+<div
+				class="row row-cols-2  align-items-center  flex-md-column flex-lg-row flex-column">				<div class="col-6">
 					<img id="img" src="../public/imgs/4.webp" alt="" width="70%"
 						class="img-fluid">
 				</div>
@@ -181,8 +186,12 @@ font-weight:bold;
 
 		<div class="container">
 			<h1 class="text-center">Nossa visão</h1>
-			<div class="row align-items-center">
-
+<div
+				class="row row-cols-2  align-items-center  flex-md-column flex-lg-row flex-column">
+					<div class="col">
+					<img id="img" src="../public/imgs/5.webp" alt="" width="70%"
+						class="imagem-responsivo">
+				</div>
 				<div class="col">
 					<p class=" text">Buscamos ser referência em comercialização de
 						rabanadas na Baixada Fluminense até o ano de 2028, trabalhos com
@@ -190,10 +199,7 @@ font-weight:bold;
 						empresas alimenticias lideres em distribuição de produtos ricos em
 						valores nutricionais.</p>
 				</div>
-				<div class="col">
-					<img id="img" src="../public/imgs/5.webp" alt="" width="70%"
-						class="img-fluid">
-				</div>
+			
 			</div>
 		</div>
 	</section>
@@ -216,6 +222,7 @@ font-weight:bold;
 		crossorigin="anonymous">
 		
 	</script>
+	
 </body>
 
 </html>
