@@ -107,7 +107,7 @@
 				<h4 class="text-start">Rabanadas Veganas</h4>
 				<div class="d-flex flex-row  align-items-center  flex-wrap gap-5 ">
 					<c:forEach items="${list}" var="produto">
-						<c:if test="${produto.getCategoria()=='Vegana'}">
+						<c:if test="${produto.getCategoria()=='Vegano'}">
 							<div class="card">
 								<div class="card-img">
 									<img class="card-img-top " src="${produto.getImagem()}"

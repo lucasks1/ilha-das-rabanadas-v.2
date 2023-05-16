@@ -1,12 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Ilha das Rabanadas</title>
-</head>
-<body>
+
 
 
 	<div class="container-fluid  border border-top-3 border-dark "
@@ -66,6 +58,3 @@
 			</div>
 		</footer>
 	</div>
-
-</body>
-</html>

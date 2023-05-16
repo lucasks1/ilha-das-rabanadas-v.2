@@ -1,4 +1,4 @@
-package com.ilhaDasRabanadas.dao;
+package com.ilhaDasRabanadas.Servlet;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 import com.ilhaDasRabanadas.bean.Produto;
+import com.ilhaDasRabanadas.dao.ProdutoDao;
 
 /**
  * Servlet implementation class ProdutoServlet
