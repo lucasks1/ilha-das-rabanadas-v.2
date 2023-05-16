@@ -31,7 +31,7 @@
 	<%@ page import="java.util.*"%>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 	<%
-	List<Produto> list = ProdutoDao.getAllProdutos();
+	List<Produto> list = ProdutoDao.getAllProducts();
 	request.setAttribute("list", list);
 	%>
 	<jsp:include page="../Headers/headerPadrao.jsp"></jsp:include>

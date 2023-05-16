@@ -80,7 +80,7 @@ public class ProdutoEditServlet extends HttpServlet {
 	produto.setImagem(imageDb);
 	try {
 		ProdutoDao produtoDao = new ProdutoDao();
-		ProdutoDao.editar(produto);
+		ProdutoDao.editProduct(produto);
 		request.setAttribute("msg", "Adicionado com sucesso");
 		response.sendRedirect("Adm/Produtos.jsp");
 	} catch (Exception e) {

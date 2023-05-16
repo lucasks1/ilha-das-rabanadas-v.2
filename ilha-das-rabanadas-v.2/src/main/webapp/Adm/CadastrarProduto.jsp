@@ -55,7 +55,7 @@
 	<div
 		class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
 		<h1 class="text-center">Cadastro</h1>
-		<form action="../ProdutoServlet" method="POST" enctype="multipart/form-data" >
+		<form action="../ProdutoInsertServlet" method="POST" enctype="multipart/form-data" >
 			<div class="mb-3 box-inputs">
 				<label for="nomeProduto" class="form-label">Nome do Produto</label>
 				<input type="text" name="nomeProduto" id="nomeProduto"

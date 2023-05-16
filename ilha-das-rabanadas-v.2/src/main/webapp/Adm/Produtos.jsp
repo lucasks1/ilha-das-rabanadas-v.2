@@ -33,7 +33,7 @@
 	<%@ page import="java.util.*"%>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 	<%
-	List<Produto> list = ProdutoDao.getAllProdutos();
+	List<Produto> list = ProdutoDao.getAllProducts();
 	request.setAttribute("list", list);
 	%>
 	<jsp:include page="../Headers/header-dashboards-adm-acessado.jsp"></jsp:include>
@@ -123,10 +123,41 @@
 									<a id="edit"
 										href="./AtualizarProduto.jsp?id=${produto.getIdProduto() }"><button
 											class="btn btn-success">Editar</button></a>
-									<button type="button" class="btn btn-outline-danger W"
+
+
+
+									<button type="button" class="btn btn-outline-danger"
 										data-bs-toggle="modal"
-										data-bs-target="#modal<?php echo $idProduto; ?>">
+										data-bs-target="#modalId${produto.getIdProduto() }">
 										Deletar</button>
+
+
+								</div>
+							</div>
+							<div class="modal fade" id="modalId${produto.getIdProduto() }"
+								tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+								role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+								<div
+									class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+									role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="modalTitleId">Deletar o
+												item:${produto.getNomeProduto()}</h5>
+											<button type="button" class="btn-close"
+												data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<form action="../ProdutoDeleteServlet" method="POST">
+										<input name= "idProduto" type="hidden" value="${produto.getIdProduto() }">
+											<div class="modal-body">Tem certeza que deseja remover
+												esse item ??</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary"
+													data-bs-dismiss="modal">Cancelar</button>
+												<input type="submit" value="SIM"class="btn btn-primary">
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
 						</c:if>
@@ -136,14 +167,15 @@
 		</div>
 	</main>
 
-
-
-
-	<!-- Optional: Place to the bottom of scripts -->
 	<script>
 		const myModal = new bootstrap.Modal(document.getElementById('modalId'),
 				options)
 	</script>
+
+
+
+
+
 
 
 	<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>

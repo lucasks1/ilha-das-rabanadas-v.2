@@ -3,9 +3,10 @@ package com.ilhaDasRabanadas.dao;
 import java.util.ArrayList;
 import java.util.List;
 import com.ilhaDasRabanadas.bean.Produto;
+import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
 
 public class ProdutoDao extends Conexao {
-	public static List<Produto> getAllProdutos() {
+	public static List<Produto> getAllProducts() {
 		List<Produto> list = new ArrayList<Produto>();
 		try {
 			open();
@@ -58,8 +59,8 @@ public class ProdutoDao extends Conexao {
 		return produto;
 	}
 
-	public static void editar(Produto produto) {
-String id = Integer.toString(produto.getIdProduto());
+	public static void editProduct(Produto produto) {
+		String id = Integer.toString(produto.getIdProduto());
 		try {
 			open();
 			String sql = "UPDATE `produto` SET nomeProduto=?,descricao=?,categoria=?,preco=?,imagem=?  WHERE idProduto = ?;";
@@ -68,9 +69,9 @@ String id = Integer.toString(produto.getIdProduto());
 			stmt.setString(2, produto.getDescricao());
 			stmt.setString(3, produto.getCategoria());
 			stmt.setString(4, produto.getPreco());
-	
+
 			stmt.setString(5, produto.getImagem());
-			
+
 			stmt.setString(6, id);
 			stmt.execute();
 		} catch (Exception e) {
@@ -80,7 +81,7 @@ String id = Integer.toString(produto.getIdProduto());
 		}
 	}
 
-	public static void adicionar(Produto produto) {
+	public static void addProduct(Produto produto) {
 
 		try {
 			open();
@@ -98,5 +99,21 @@ String id = Integer.toString(produto.getIdProduto());
 			System.out.println("error na inserção");
 			System.out.println(e);
 		}
+	}
+
+	public static void deleteProduct(Produto produto) {
+		String id = Integer.toString(produto.getIdProduto());
+		try {
+			open();
+			String sql = "DELETE FROM produto WHERE `produto`.`idProduto` = ?";
+			stmt = con.prepareStatement(sql);
+			stmt.setString(1, id);
+			stmt.execute();
+		} catch (Exception e) {
+			System.out.println(produto.getNomeProduto());
+			System.out.println("error na inserção");
+			System.out.println(e);
+		}
+
 	}
 }
