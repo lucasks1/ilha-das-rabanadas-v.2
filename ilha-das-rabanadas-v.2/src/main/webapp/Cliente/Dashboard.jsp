@@ -1,6 +1,18 @@
+<%@page import="java.lang.ProcessBuilder.Redirect"%>
+<%@page import="org.apache.jasper.tagplugins.jstl.core.If"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%
+Integer id = (Integer) session.getAttribute("id");
 
+
+ if(id==null || id<1){
+	response.sendRedirect("../Home/home.jsp");
+	 
+ }
+
+
+%>
 
 <!doctype html>
 <html lang="pt-br">

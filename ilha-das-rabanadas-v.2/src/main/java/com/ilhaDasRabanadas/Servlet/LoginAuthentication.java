@@ -52,22 +52,23 @@ public class LoginAuthentication extends HttpServlet {
 
 		try {
 			LoginDao.Authentication(email, senha);
-			int id = LoginDao.Authentication(email, senha).getIdLogin();
-			if (id == 0) {
-				response.sendRedirect("./Adm/Dashboard.jsp");
-				
-
-			}
-
-		
-			if (id != 0) {
-				response.sendRedirect("./Cliente/Dashboard.jsp");
-				
-			}
+			Login login = LoginDao.Authentication(email, senha);
+		int id=login.getIdLogin();
+		if (id ==1 ) {
+			session.removeAttribute("id");
+			response.sendRedirect("./Adm/Dashboard.jsp");
+			session.setAttribute("id", id);
+		}
+		if(id>1) {
+			session.removeAttribute("id");
+			response.sendRedirect("./Cliente/Dashboard.jsp");
+			session.setAttribute("id", id);
+		}
+		response.sendRedirect("./Login/login.jsp");
+		session.setAttribute("msg", "Email ou senha invalido!!");
 
 		} catch (Exception e) {
-			System.out.println("erro no servlet ><");
-			System.out.println(e.getMessage());
+		
 
 		}
 

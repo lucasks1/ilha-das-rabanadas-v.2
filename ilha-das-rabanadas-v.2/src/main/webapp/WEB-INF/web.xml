@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>ilhaDasRabanadas</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    
-    <welcome-file>home.html</welcome-file>
-    <welcome-file>home.jsp</welcome-file>
-    <welcome-file>sobre.html</welcome-file>
-    <welcome-file>sobre.jsp</welcome-file>
-    <welcome-file>Produtos.html</welcome-file>
-    <welcome-file>Produtos.jsp</welcome-file>
-    <welcome-file>Pedidos.html</welcome-file>
-    <welcome-file>Pedidos.jsp</welcome-file>
-    <welcome-file>cardapio.html</welcome-file>
-    <welcome-file>cardapio.jsp</welcome-file>
-    <welcome-file>perfil.jsp</welcome-file>
-    <welcome-file>perfil.htm</welcome-file>
-    <welcome-file>CadastrarProduto.html</welcome-file>
-    <welcome-file>CadastrarProduto.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-      <welcome-file>default.jsp</welcome-file>
-    <welcome-file>AtualizarProduto.html</welcome-file>
-    <welcome-file>AtualizarProduto.jsp</welcome-file>
-  </welcome-file-list>
+	<display-name>ilhaDasRabanadas</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>home.html</welcome-file>
+		<welcome-file>home.jsp</welcome-file>
+		<welcome-file>sobre.html</welcome-file>
+		<welcome-file>sobre.jsp</welcome-file>
+		<welcome-file>Produtos.html</welcome-file>
+		<welcome-file>Produtos.jsp</welcome-file>
+		<welcome-file>Pedidos.html</welcome-file>
+		<welcome-file>Pedidos.jsp</welcome-file>
+		<welcome-file>cardapio.html</welcome-file>
+		<welcome-file>cardapio.jsp</welcome-file>
+		<welcome-file>perfil.jsp</welcome-file>
+		<welcome-file>perfil.htm</welcome-file>
+		<welcome-file>CadastrarProduto.html</welcome-file>
+		<welcome-file>CadastrarProduto.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>AtualizarProduto.html</welcome-file>
+
+		<welcome-file>AtualizarProduto.jsp</welcome-file>
+		<welcome-file>AtualizarPerfil.html</welcome-file>
+		<welcome-file>AtualizarPerfil.jsp</welcome-file>
+		<welcome-file>Logout.jsp</welcome-file>
+		<welcome-file>Logout.html</welcome-file>
+	</welcome-file-list>
 </web-app>

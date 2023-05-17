@@ -8,21 +8,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ilhaDasRabanadas.bean.Cliente;
-import com.ilhaDasRabanadas.bean.Login;
 import com.ilhaDasRabanadas.dao.ClienteDao;
-import com.ilhaDasRabanadas.dao.LoginDao;
 
 /**
- * Servlet implementation class ClienteInsertServlet
+ * Servlet implementation class ClienteUpdateServlet
  */
-@WebServlet("/ClienteInsertServlet")
-public class ClienteInsertServlet extends HttpServlet {
+@WebServlet("/ClienteUpdateServlet")
+public class ClienteUpdateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public ClienteInsertServlet() {
+	public ClienteUpdateServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -44,37 +42,19 @@ public class ClienteInsertServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		// criando o login
-		LoginDao loginDao = new LoginDao();
-
-		String email = request.getParameter("email");
-		String password = request.getParameter("senha");
-
-		Login login = new Login();
-		login.setEmail(email);
-		login.setPassword(password);
-		try {
-			LoginDao.insert(login);
-
-		} catch (Exception e) {
-
-			// TODO: handle exception
-			System.out.println(e.getMessage());
-
-		}
-		Login loginDb = LoginDao.getLogin(email);
-
+		doGet(request, response);
+		int idCliente = Integer.parseInt(request.getParameter("idCliente"));    
 		String nome = request.getParameter("nome");
 		String sobrenome = request.getParameter("sobrenome");
 		String numeroCliente = request.getParameter("numeroCliente");
 		String rua = request.getParameter("rua");
 		String numero = request.getParameter("numero");
 		String bairro = request.getParameter("bairro");
-		String cep  = request.getParameter("cep");
+		String cep = request.getParameter("cep");
 		String cidade = request.getParameter("cidade");
-		//==========================
+		//==========================	//==========================
 		Cliente cliente = new Cliente();
-		cliente.setIdLogin(loginDb.getIdLogin());
+		cliente.setIdCliente(idCliente);
 		cliente.setNomeCliente(nome);
 		cliente.setSobreNome(sobrenome);
 		cliente.setNumeroCliente(numeroCliente);
@@ -83,11 +63,10 @@ public class ClienteInsertServlet extends HttpServlet {
 		cliente.setCep(cep);
 		cliente.setNumero(numero);
 		cliente.setBairro(bairro);
-
 		try {
 			ClienteDao clienteDao = new ClienteDao();
-			ClienteDao.register(cliente);
-			response.sendRedirect("../Cliente/Dashboard.jsp");
+			ClienteDao.update(cliente);
+			response.sendRedirect("./Cliente/Perfil.jsp");
 		} catch (Exception e) {
 		
 			System.out.println("errora");

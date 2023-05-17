@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ page import="com.ilhaDasRabanadas.bean.Cliente"%>
+
+<%@ page import="com.ilhaDasRabanadas.dao.ClienteDao"%>
 <!doctype html>
 <html lang="pt-br">
 
@@ -25,8 +28,15 @@
 </head>
 <body>
 <body>
-	<jsp:include page="../Headers/header-dashboard-cliente.jsp"></jsp:include>
 
+
+	<jsp:include page="../Headers/header-dashboard-cliente.jsp"></jsp:include>
+	<%
+	
+	Integer id = (Integer) session.getAttribute("id");
+	Cliente cliente = ClienteDao.getElementByIdLogin(id);
+	request.setAttribute("cliente", cliente);
+	%>
 	<div
 		class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
 		<h1 class="text-center">Seu perfil</h1>
@@ -36,7 +46,7 @@
 
 				<div class="col">
 					<h5>Nome</h5>
-					<p></p>
+					<p>${cliente.getNomeCliente()} </p> 
 				</div>
 
 			</div>
@@ -44,13 +54,13 @@
 
 				<div class="col-6">
 					<h5>Telefone celular</h5>
-					<p></p>
+					<p>${cliente.getNumeroCliente()}</p>
 				</div>
 			</div>
 			<div class="mb-3 row">
 				<div class="col-6">
 					<h5>CEP</h5>
-					<p></p>
+					<p>${cliente.getCep()}</p>
 				</div>
 			</div>
 
@@ -58,11 +68,11 @@
 			<div class="mb-4 row">
 				<div class="col">
 					<h5>Rua</h5>
-					<p></p>
+					<p>${cliente.getRua()}</p>
 				</div>
 				<div class="col">
 					<h5>Número</h5>
-					<p></p>
+					<p>${cliente.getNumero()}</p>
 				</div>
 			</div>
 
@@ -72,19 +82,19 @@
 			<div class="mb-4 row">
 				<div class="col">
 					<h5>Bairro</h5>
-					<p></p>
+					<p>${cliente.getBairro()}</p>
 				</div>
 			</div>
 			<div class="col">
 				<h5>Cidade</h5>
-				<p></p>
+				<p>${cliente.getCidade()}</p>
 			</div>
 
 
 
-			<a href="./atualizarPerfil" id="button-submit "
+			<a href="../Cliente/AtualizarPerfil.jsp" id="button-submit"
 				class=" nav-link d-flex justify-content-center"><input
-				id="finalizar" class="btn" type="submit" value="Editar"></a>
+				id="finalizar" class="btn" value="Editar"type="submit" ></a>
 
 		</div>
 	</div>

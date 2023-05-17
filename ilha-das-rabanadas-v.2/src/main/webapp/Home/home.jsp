@@ -29,17 +29,38 @@
 </head>
 
 <body>
+	<%
+	Integer id = (Integer) session.getAttribute("id");
 
-
-
+	if (id == null || id < 1) {
+	%>
 	<jsp:include page="../Headers/headerPadrao.jsp"></jsp:include>
+
+
+
+	<%
+	} else if (id > 1) {
+	%>
+	<jsp:include page="../Headers/headerCliente.jsp"></jsp:include>
+	<%
+	} else {
+	%>
+	<jsp:include page="../Headers/headerAdm.jsp"></jsp:include>
+	<%
+	}
+	%>
+
+
+
+
+
 
 	<section>
 		<div id="boas-vindas-banner"
 			class=" banner container-fluid d-flex align-items-center justify-content-center body">
 
 			<video autoplay loop muted plays-inline>
-			<source src="../public/videos/rabanada-view.mp4">
+				<source src="../public/videos/rabanada-view.mp4">
 			</video>
 			<h1 class="text-white">
 				<b> Ilha das Rabanadas</b>

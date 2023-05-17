@@ -36,7 +36,6 @@
 	<%
 	Produto produto = ProdutoDao.getElementById(request.getParameter("id"));
 	request.setAttribute("produto", produto);
-	
 	%>
 	<div class="container-fluid " id="header">
 		<header
@@ -61,47 +60,49 @@
 		class="container d-flex justify-content-center align-items-center my-5 flex-column gap-3">
 		<h1 class="text-center">Atualizar Produto</h1>
 		<p></p>
-			<form action="../ProdutoEditServlet" method="POST"
-				enctype="multipart/form-data">
-			<input name="idProduto" type="hidden" value="${produto.getIdProduto()}">
-				<div class="mb-3 box-inputs">
+		<form action="../ProdutoEditServlet" method="POST"
+			enctype="multipart/form-data">
+			<input name="idProduto" type="hidden"
+				value="${produto.getIdProduto()}">
+			<div class="mb-3 box-inputs">
 
-					<label for="nomeProduto" class="form-label">Nome do Produto</label>
-					<input type="text" name="nomeProduto" id="nomeProduto"
-						class="form-control" required placeholder=""
-						aria-describedby="helpId" value="${produto.getNomeProduto()}">
-				</div>
-				<div class="mb-3 box-inputs">
-					<label for="descricao" class="form-label">Descrição do
-						Produto</label> <input  type="text" value="${produto.getDescricao()}" name="descricao" id="descricao"
-						class="form-control" required placeholder=""
-						aria-describedby="helpId">
-				</div>
-				<div class="mb-3 box-inputs">
-					<label for="preco" class="form-label">Preço do produto</label> <input
-						type="text" name="preco" id="preco" value="${produto.getPreco()}" class="form-control" required
-						placeholder="" aria-describedby="helpId">
-				</div>
-				<div class="mb-3 box-inputs">
-					<label for="categoria" class="form-label">Categoria do
-						produto</label> <input type="text" value="${produto.getCategoria()}" name="categoria" id="categoria"
-						class="form-control" required
-						placeholder="Doce,salgado,vegano ..." aria-describedby="helpId">
-				</div>
+				<label for="nomeProduto" class="form-label">Nome do Produto</label>
+				<input type="text" name="nomeProduto" id="nomeProduto"
+					class="form-control" required placeholder=""
+					aria-describedby="helpId" value="${produto.getNomeProduto()}">
+			</div>
+			<div class="mb-3 box-inputs">
+				<label for="descricao" class="form-label">Descrição do
+					Produto</label> <input type="text" value="${produto.getDescricao()}"
+					name="descricao" id="descricao" class="form-control" required
+					placeholder="" aria-describedby="helpId">
+			</div>
+			<div class="mb-3 box-inputs">
+				<label for="preco" class="form-label">Preço do produto</label> <input
+					type="text" name="preco" id="preco" value="${produto.getPreco()}"
+					class="form-control" required placeholder=""
+					aria-describedby="helpId">
+			</div>
+			<div class="mb-3 box-inputs">
+				<label for="categoria" class="form-label">Categoria do
+					produto</label> <input type="text" value="${produto.getCategoria()}"
+					name="categoria" id="categoria" class="form-control" required
+					placeholder="Doce,salgado,vegano ..." aria-describedby="helpId">
+			</div>
 
-				<div class="mb-3 box-inputs">
-					<label for="imagemProduto" class="form-label">Imagem do
-						produto</label> <input type="file" name="imagem" class='form-control'
-						required>
+			<div class="mb-3 box-inputs">
+				<label for="imagemProduto" class="form-label">Imagem do
+					produto</label> <input type="file" name="imagem" class='form-control'
+					required>
 
-				</div>
-				<div id="button-submit " class="d-flex justify-content-center">
-					<input id="cadastrar" class="btn" type="submit"
-						name='enviar-formulario' value="Cadastrar">
-				</div>
+			</div>
+			<div id="button-submit " class="d-flex justify-content-center">
+				<input id="cadastrar" class="btn" type="submit"
+					name='enviar-formulario' value="Cadastrar">
+			</div>
 
-			</form>
-	
+		</form>
+
 	</div>
 	<!-- Bootstrap JavaScript Libraries -->
 	<script

@@ -53,7 +53,8 @@
         </div>
         
         <p style=" width: max-content;" class="text-danger">
-          
+          ${msg}
+           <%  session.removeAttribute("msg");%> 
         </p>
         <p class="text-start">Esqueceu a senha?</p>
         <div class="d-flex align-items gap-3">

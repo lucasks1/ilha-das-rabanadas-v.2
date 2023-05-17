@@ -55,14 +55,17 @@ public class LoginDao extends Conexao {
 			stmt.setString(2, senha);
 			
 			rs = stmt.executeQuery();
-			while (rs.next()) {
-				login.setIdLogin(rs.getInt("idLogin"));
+		
 
-				System.out.println(rs.getString("login"));
-				System.out.println(rs.getString("senha"));
-				
+				while (rs.next()) {
+					login.setIdLogin(rs.getInt("idLogin"));
 
-			}
+					login.setEmail(rs.getString("login"));
+					login.setPassword(rs.getString("senha"));
+					
+
+				}
+		
 		} catch (Exception e) {
 			// TODO: ha	System.out.println("erro no servlet ><");ndle exception
 			
