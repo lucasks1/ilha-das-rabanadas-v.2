@@ -3,33 +3,28 @@ package com.ilhaDasRabanadas.bean;
 public class Carrinho {
 	
 	protected int idCarrinho;
-	public Cliente cliente;
-	public Produto produto;
+
+	protected int idCliente;
+	protected int idProduto;
 	public int getIdCarrinho() {
 		return idCarrinho;
 	}
 	public void setIdCarrinho(int idCarrinho) {
 		this.idCarrinho = idCarrinho;
 	}
-	public Cliente getCliente() {
-		return cliente;
+	public int getIdCliente() {
+		return idCliente;
 	}
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
 	}
-	public Produto getProduto() {
-		return produto;
+	public int getIdProduto() {
+		return idProduto;
 	}
-	public void setProduto(Produto produto) {
-		this.produto = produto;
+	public void setIdProduto(int idProduto) {
+		this.idProduto = idProduto;
 	}
 	
-	public Carrinho(int idCarrinho,Cliente cliente,Produto produto) {
 	
-		this.idCarrinho = idCarrinho;
-		this.cliente = cliente;
-		this.produto = produto;
-	
-	}
 
 }

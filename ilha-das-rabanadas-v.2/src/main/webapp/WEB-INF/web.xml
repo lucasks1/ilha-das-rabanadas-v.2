@@ -20,11 +20,12 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 		<welcome-file>AtualizarProduto.html</welcome-file>
-
 		<welcome-file>AtualizarProduto.jsp</welcome-file>
 		<welcome-file>AtualizarPerfil.html</welcome-file>
 		<welcome-file>AtualizarPerfil.jsp</welcome-file>
 		<welcome-file>Logout.jsp</welcome-file>
 		<welcome-file>Logout.html</welcome-file>
+		<welcome-file>MinhasCompras.jsp</welcome-file>
+		<welcome-file>MinhasCompras.html</welcome-file>
 	</welcome-file-list>
 </web-app>
