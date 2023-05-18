@@ -5,26 +5,27 @@
 <html lang="pt-br">
 
 <head>
+    <title>Ilha das Rabanadas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Ilha das Rabanadas</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-
-<!-- Required meta tags -->
-<meta charset="utf-8">
-
-<!-- Bootstrap CSS v5.2.1 -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-	crossorigin="anonymous">
-
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="../public/css/home/home.css">
-<link rel="stylesheet" href="../public/css/style.css">
-<link rel="icon" href="../public/imgs/img/palmeira.png">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/css/home/home.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" href="../public/imgs/img/palmeira.png">
+    <style>
+      
+        @media (max-width: 576px) {
+           .im {
+                display: none;
+            }
+        }
+    </style>
 
 </head>
 
@@ -71,7 +72,7 @@
 		</div>
 	</section>
 	<section id="secao-cardapio">
-		<div class="container  p-3">
+		<div class="container  p-2">
 			<h3 class="text-center">Cardápio</h3>
 			<a class="nav-link links" href="../Produto/Cardapio.jsp">
 				<p class="text-end">Visualizar cardápio completo</p>
@@ -114,33 +115,38 @@
 			<h3 class="text-center my-3">
 				<b> Serviços Prestados</b>
 			</h3>
-
+       
 			<div class="row justify-content-center align-items-center g-2">
 				<div class="col">
 					<ul class="d-flex flex-column gap-5">
+					
 						<li class="d-flex align-items-center gap-2 "><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
 								VENDA A VAREJO DE PRODUTOS (LOJA FÍSICA).</span></li>
+								
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
 								VENDA DE SERVIÇOS PARA BUFFET</span></li>
+								
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
 								SERVIÇO DE DELIVERY PRÓPRIO</span></li>
+								
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
 								PRODUTOS PERSONALIZADOS</span></li>
+								
 						<li class="d-flex align-items-center gap-2"><lord-icon
 								src="https://cdn.lordicon.com/egiwmiit.json" trigger="loop"
 								delay="2000" style="width:20px;height:20px"> </lord-icon> <span>
 								ALIMENTOS FITNESS</span></li>
 					</ul>
 				</div>
-				<div class="col d-flex justify-content-center">
+				<div  class="im">
 					<img width="70%" src="../public/imgs/img/servico-prestado.webp"
 						alt="">
 				</div>
