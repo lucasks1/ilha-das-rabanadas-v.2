@@ -31,8 +31,8 @@
 	<%@ page import="com.ilhaDasRabanadas.bean.Produto"%>
 
 	<%@ page import="com.ilhaDasRabanadas.dao.ProdutoDao"%>
-	<%@ page import="java.util.*"%>
-	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	
+
 	<%
 	Produto produto = ProdutoDao.getElementById(request.getParameter("id"));
 	request.setAttribute("produto", produto);
