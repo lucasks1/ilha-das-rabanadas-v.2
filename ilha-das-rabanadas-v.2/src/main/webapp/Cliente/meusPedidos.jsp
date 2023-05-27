@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ page import="com.ilhaDasRabanadas.bean.*,com.ilhaDasRabanadas.dao.*"%>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,9 +19,12 @@
 <link rel="stylesheet" href="../public/css/style.css">
 <link rel="stylesheet">
 <link rel="icon" href="../public/imgs/img/palmeira.png">
-<href ="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
 </head>
 <body>
+
 	<%
 	Integer id = (Integer) session.getAttribute("id");
 	//---intanciando o obj cliente
@@ -34,6 +34,7 @@
 	Pedido pedido = PedidoDao.getAllOrderedByIdCliente(clienteId);
 	request.setAttribute("pedido", pedido);
 	%>
+
 	<jsp:include page="../Headers/header-dashboard-cliente.jsp"></jsp:include>
 
 	<div class="table-responsive">
@@ -42,16 +43,16 @@
 
 				<thead>
 					<tr>
-						<th scope="col">Código do Pedido</th>
+						<th scope="col">CÃ³digo do Pedido</th>
 						<th scope="col">Produto encomendado</th>
 						<th scope="col">Data da entrega</th>
 						<th scope="col">Hora da entrega</th>
-						<th scope="col">Endereço</th>
+						<th scope="col">EndereÃ§o</th>
 						<th scope="col">Quantidade do Pedido</th>
 						<th scope="col">Valor</th>
 						<th scope="col">Forma de Pagamento</th>
 						<th scope="col">troco</th>
-						<th scope="col" colspan="2">Açoes</th>
+						<th scope="col" colspan="2">AÃ§oes</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -118,7 +119,7 @@
 							<div class='modal-content'>
 								<div class='modal-header'>
 									<h5 class='modal-title' id='modalTitleId'>Indique o dado
-										que você quer mudar!</h5>
+										que vocÃª quer mudar!</h5>
 									<button type='button' class='btn-close' data-bs-dismiss='modal'
 										aria-label='Close'></button>
 								</div>

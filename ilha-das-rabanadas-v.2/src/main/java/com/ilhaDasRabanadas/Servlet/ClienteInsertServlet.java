@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.ilhaDasRabanadas.bean.Cliente;
 import com.ilhaDasRabanadas.bean.Login;
@@ -43,8 +44,9 @@ public class ClienteInsertServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		HttpSession session = request.getSession();
 		// TODO Auto-generated method stub
-		// criando o login
+		// criando o registro na tabela de login
 		LoginDao loginDao = new LoginDao();
 
 		String email = request.getParameter("email");
@@ -62,6 +64,8 @@ public class ClienteInsertServlet extends HttpServlet {
 			System.out.println(e.getMessage());
 
 		}
+		// criando o registro na tabela de cliente
+
 		Login loginDb = LoginDao.getLogin(email);
 
 		String nome = request.getParameter("nome");
@@ -70,9 +74,9 @@ public class ClienteInsertServlet extends HttpServlet {
 		String rua = request.getParameter("rua");
 		String numero = request.getParameter("numero");
 		String bairro = request.getParameter("bairro");
-		String cep  = request.getParameter("cep");
+		String cep = request.getParameter("cep");
 		String cidade = request.getParameter("cidade");
-		//==========================
+		// ==========================
 		Cliente cliente = new Cliente();
 		cliente.setIdLogin(loginDb.getIdLogin());
 		cliente.setNomeCliente(nome);
@@ -85,17 +89,14 @@ public class ClienteInsertServlet extends HttpServlet {
 		cliente.setBairro(bairro);
 
 		try {
+			// registrando o cliente
 			ClienteDao clienteDao = new ClienteDao();
 			ClienteDao.register(cliente);
-			
-			LoginDao.Authentication(email, password);
-			Login login1 = LoginDao.Authentication(email, password);
-		int id=login1.getIdLogin();
-		response.sendRedirect("./Cliente/Dashboard.jsp");
+
+			response.sendRedirect("../Cliente/Dashboard.jsp");
 		} catch (Exception e) {
-		
-			System.out.println("errora");
-			System.out.println(e);
+
+			response.sendRedirect("./Cliente/Dashboard.jsp");
 		}
 
 	}
