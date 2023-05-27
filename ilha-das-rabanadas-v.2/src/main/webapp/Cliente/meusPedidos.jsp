@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ page import="com.ilhaDasRabanadas.bean.*,com.ilhaDasRabanadas.dao.*"%>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,12 +22,20 @@
 <link rel="stylesheet" href="../public/css/style.css">
 <link rel="stylesheet">
 <link rel="icon" href="../public/imgs/img/palmeira.png">
-	<href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-
+<href ="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
+	<%
+	Integer id = (Integer) session.getAttribute("id");
+	//---intanciando o obj cliente
+	Cliente cliente = ClienteDao.getElementByIdLogin(id);
+	int clienteId = cliente.getIdCliente();
+	//---instacindo o obj pedido
+	Pedido pedido = PedidoDao.getAllOrderedByIdCliente(clienteId);
+	request.setAttribute("pedido", pedido);
 
+	
+	%>
 	<jsp:include page="../Headers/header-dashboard-cliente.jsp"></jsp:include>
 
 	<div class="table-responsive">

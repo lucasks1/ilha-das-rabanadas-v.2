@@ -90,6 +90,11 @@ public class Cliente {
 
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
+	
+	}
+	public String getEndereco() {
+		String endereco = getRua()+","+getNumero()+", "+getBairro()+", "+getCidade();
+		return endereco;
 	}
 
 }

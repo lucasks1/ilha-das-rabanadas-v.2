@@ -87,7 +87,11 @@ public class ClienteInsertServlet extends HttpServlet {
 		try {
 			ClienteDao clienteDao = new ClienteDao();
 			ClienteDao.register(cliente);
-			response.sendRedirect("../Cliente/Dashboard.jsp");
+			
+			LoginDao.Authentication(email, password);
+			Login login1 = LoginDao.Authentication(email, password);
+		int id=login1.getIdLogin();
+		response.sendRedirect("./Cliente/Dashboard.jsp");
 		} catch (Exception e) {
 		
 			System.out.println("errora");

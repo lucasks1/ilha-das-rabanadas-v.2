@@ -1,4 +1,5 @@
 
+<%@page import="javax.xml.crypto.Data"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ page import="com.ilhaDasRabanadas.bean.Cliente"%>
@@ -7,6 +8,7 @@
 <%@ page import="com.ilhaDasRabanadas.bean.Produto"%>
 
 <%@ page import="com.ilhaDasRabanadas.dao.ProdutoDao"%>
+<%@ page import="java.util.Date,java.text.SimpleDateFormat"%>
 
 
 
@@ -86,19 +88,32 @@ input[type=number] {
 
 <body>
 
+
 	<%
-	
-	Produto produto = ProdutoDao.getElementById(request.getParameter("id"));
-	request.setAttribute("produto", produto);
-	
 	Integer id = (Integer) session.getAttribute("id");
-	Cliente cliente = ClienteDao.getElementByIdLogin(id);
-	request.setAttribute("cliente", cliente);
+	SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+	Date dataAtual = new Date();
+	if (id == null) {
+		request.setAttribute("msg", "É necessário estar logado para efetuar a compra!");
+		response.sendRedirect("../Login/login.jsp");
+
+	} else {
+		Cliente cliente = ClienteDao.getElementByIdLogin(id);
+		request.setAttribute("cliente", cliente);
+		Produto produto = ProdutoDao.getElementById(request.getParameter("product"));
+		request.setAttribute("produto", produto);
+		String data = formatador.format(dataAtual);
+		request.setAttribute("data", data);
+
+	}
 	%>
 	<!-- Bootstrap JavaScript Libraries -->
 
 
-
+	
+	<jsp:include page="../Headers/headerCliente.jsp"></jsp:include>
+	
+	
 	<main class="my-5">
 
 
@@ -113,20 +128,21 @@ input[type=number] {
 
 
 		<section class="container  flex-column p-4">
-			<form action="../pedido/insert" method="POST">
+			<form action="../PedidoInsertServlet" method="POST">
 				<input type="hidden" name="idCliente"
-					value=" ${cliente.getIdCliente()}"> <input type="hidden"
-					name="idProduto" value="${produto.getIdProduto()}">
+					value="${cliente.getIdCliente()}"> <input type="hidden"
+					name="nomeProduto" value="${produto.getNomeProduto()}">
 				<div class="card   mb-3">
 					<div class="row  align-items-center g-0">
 						<div class="col">
-							<img src="" class="" alt="..." height="100%" width="90%">
+							<img src="${produto.getImagem()}" class="" alt="..."
+								height="100%" width="90%">
 						</div>
 						<div class="col">
 							<div class="card-body">
-								<h5 class="card-title"></h5>
+								<h5 class="card-title">${produto.getNomeProduto()}</h5>
 								<p class="card-text">
-									Valor:<span class="fw-bold" id="preco"></span>
+									Valor:<span class="fw-bold" id="preco">${produto.getPreco()}</span>
 								<div class="mb-3">
 									<label class=" mb-2 form-label"> <label>Quantidade</label>
 										<input type="number" name="quantidadePedido" value="1"
@@ -137,8 +153,8 @@ input[type=number] {
 								<div>
 
 									<p>Total:</p>
-									<input type="text" value="" id="valorPedido" class="border-0"
-										name="valorPedido" readonly>
+									<input type="text" value="R$5,00" id="valorPedido"
+										class="border-0" name="valorPedido" readonly>
 								</div>
 							</div>
 						</div>
@@ -150,20 +166,22 @@ input[type=number] {
 							<div class="card-body">
 								<div class="mb-3">
 									<label for="" class=" mb-2 form-label"> Endereço de
-										entrega: </label> <input type="text" name="endereco" id="endereco"
+										entrega: </label> <input type="text" name="endereco"
+										value="${cliente.getEndereco()}" id="endereco"
 										class="form-control" placeholder="" aria-describedby="helpId"
 										required>
 								</div>
 								<div class="mb-3">
 									<label class=" mb-2 form-label" for="">Data de entrega</label>
-									<input type="date" name="dataEntrega" id="dataEntrega"
-										class="form-control" required>
+									<input type="date" min="${data}" name="dataEntrega" id="dataEntrega"
+										class="form-control"  required>
 								</div>
 								<div class="mb-3">
 									<label class=" mb-2 form-label" for="hora da entrega">Hora
 										da entrega</label> <input type="time" id="" min="08:00" max="20:00"
 										name="hora" class="form-control" required>
 								</div>
+
 							</div>
 						</div>
 					</div>
