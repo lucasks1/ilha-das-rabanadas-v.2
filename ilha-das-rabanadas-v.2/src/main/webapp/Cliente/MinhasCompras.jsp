@@ -88,17 +88,32 @@ input[type=number] {
 
 
 	<%
-	
-	Produto produto = ProdutoDao.getElementById(request.getParameter("id"));
-	request.setAttribute("produto", produto);
-	
+
+
 	Integer id = (Integer) session.getAttribute("id");
-	Cliente cliente = ClienteDao.getElementByIdLogin(id);
-	request.setAttribute("cliente", cliente);
-	%>
+	SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+	Date dataAtual = new Date();
+	if (id == null) {
+		request.setAttribute("msg", "É necessário estar logado para efetuar a compra!");
+		response.sendRedirect("../Login/login.jsp");
+
+	} else {
+		Cliente cliente = ClienteDao.getElementByIdLogin(id);
+		request.setAttribute("cliente", cliente);
+		Produto produto = ProdutoDao.getElementById(request.getParameter("product"));
+		request.setAttribute("produto", produto);
+		String data = formatador.format(dataAtual);
+		request.setAttribute("data", data);
+		out.println(produto.getImagem());
+	}
+
+
 
 	<!-- Bootstrap JavaScript Libraries -->
 
+
+
+	<jsp:include page="../Headers/headerCliente.jsp"></jsp:include>
 
 
 	<main class="my-5">
@@ -110,7 +125,7 @@ input[type=number] {
 
 		<div class="text-center">
 			<img src="../public/imgs/pedidos/naoHaPedidos.webp" alt=""></img>
-			<h4>Seu carrinho est� vazio!</h4>
+			<h4>Seu carrinho está vazio!</h4>
 		</div>
 
 
@@ -153,22 +168,41 @@ input[type=number] {
 						<div class="col">
 							<div class="card-body">
 								<div class="mb-3">
-									<label for="" class=" mb-2 form-label"> Endere�o de
+									<label for="" class=" mb-2 form-label"> Endereço de
 										entrega: </label> <input type="text" name="endereco" id="endereco"
 										class="form-control" placeholder="" aria-describedby="helpId"
 										required>
 								</div>
 								<div class="mb-3">
 									<label class=" mb-2 form-label" for="">Data de entrega</label>
-									<input type="date" name="dataEntrega" id="dataEntrega"
-										class="form-control" required>
+									<input type="date" min="${data}" name="dataEntrega"
+										id="dataEntrega" class="form-control" required>
+
 								</div>
 								<div class="mb-3">
 									<label class=" mb-2 form-label" for="hora da entrega">Hora
 										da entrega</label> <input type="time" id="" min="08:00" max="20:00"
 										name="hora" class="form-control" required>
 								</div>
-
+								<div>
+								<p>Forma de Pagamento</p>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" value="cartao"
+										name="flexRadioDefault" id="flexRadioDefault1"> <label
+										class="form-check-label" for="flexRadioDefault1">
+										Cartão ou pix </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" value="dinheiro"
+										name="flexRadioDefault" id="flexRadioDefault2" checked>
+									<label class="form-check-label" for="flexRadioDefault2">
+										Dinheiro </label>
+								</div>
+								</div>
+								<div>
+									<p>Precisará de troco? Para quanto?</p>
+									<input type="text" value="" name="troco" class="form-control">
+								</div>
 							</div>
 						</div>
 					</div>

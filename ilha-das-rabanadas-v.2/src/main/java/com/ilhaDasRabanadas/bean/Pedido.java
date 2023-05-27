@@ -6,10 +6,28 @@ public class Pedido {
 	public String hora;
 	public String valorPedido;
 	public String quantidadePedido;
-	public Cliente cliente;
+
 	public Produto produto;
 	public String endereco;
+
+	public String troco; 
 	public String formaPagamento;
+
+
+	public String getTroco() {
+		return troco;
+	}
+	public void setTroco(String troco) {
+		this.troco = troco;
+	}
+	public String getFormaPagamento() {
+		return formaPagamento;
+	}
+	public void setFormaPagamento(String formaPagamento) {
+		this.formaPagamento = formaPagamento;
+	}
+
+
 	public int getIdPedido() {
 		return idPedido;
 	}
@@ -58,24 +76,7 @@ public class Pedido {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public String getFormaPagamento() {
-		return formaPagamento;
-	}
-	public void setFormaPagamento(String formaPagamento) {
-		this.formaPagamento = formaPagamento;
-	}
-	
-	public Pedido(int idPedido,String dataEntrega,String hora,String valorPedido,String quantidadePedido,Cliente cliente,Produto produto,String endereco,String formaPagamento) {
-		this.idPedido = idPedido;
-		this.dataEntrega = dataEntrega;
-		this.hora = hora;
-		this.valorPedido = valorPedido;
-		this.quantidadePedido = quantidadePedido;
-		this.cliente = cliente;
-		this.produto = produto;
-		this.endereco = endereco;
-		this.formaPagamento = formaPagamento;
-	}
-	
+
+
 
 }

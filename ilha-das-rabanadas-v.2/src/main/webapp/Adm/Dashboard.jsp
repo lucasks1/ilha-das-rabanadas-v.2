@@ -43,7 +43,7 @@
 
                     </div>
                     <div class="card-footer">
-                        <a href="../Adm/Pedidos.jsp"><button class="btn btn-success">Acessar</button></a>
+                        <a href="../Adm/meusPedidos.jsp"><button class="btn btn-success">Acessar</button></a>
                     </div>
                 </div>
                 <div class="card col-lg-5 col-md-6 col-sm-12">
