@@ -9,8 +9,22 @@ public class Pedido {
 	public String valorPedido;
 	public String quantidadePedido;	
 	public String endereco;
+	public String troco; 
+	public String formaPagamento;
 
 
+	public String getTroco() {
+		return troco;
+	}
+	public void setTroco(String troco) {
+		this.troco = troco;
+	}
+	public String getFormaPagamento() {
+		return formaPagamento;
+	}
+	public void setFormaPagamento(String formaPagamento) {
+		this.formaPagamento = formaPagamento;
+	}
 	public int getIdPedido() {
 		return idPedido;
 	}

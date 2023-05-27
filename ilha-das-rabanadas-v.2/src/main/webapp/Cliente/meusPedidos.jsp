@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ilha das Rabanadas</title>
+<title>Ilha das Rabanadas| Minhas Encomendas</title>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -33,23 +33,24 @@
 	//---instacindo o obj pedido
 	Pedido pedido = PedidoDao.getAllOrderedByIdCliente(clienteId);
 	request.setAttribute("pedido", pedido);
-
-	
 	%>
 	<jsp:include page="../Headers/header-dashboard-cliente.jsp"></jsp:include>
 
 	<div class="table-responsive">
 		<div class="container">
-			<table class="table  table-hover">
+			<table class="table table-hover">
 
 				<thead>
 					<tr>
 						<th scope="col">Código do Pedido</th>
+						<th scope="col">Produto encomendado</th>
 						<th scope="col">Data da entrega</th>
 						<th scope="col">Hora da entrega</th>
 						<th scope="col">Endereço</th>
 						<th scope="col">Quantidade do Pedido</th>
 						<th scope="col">Valor</th>
+						<th scope="col">Forma de Pagamento</th>
+						<th scope="col">troco</th>
 						<th scope="col" colspan="2">Açoes</th>
 					</tr>
 				</thead>
@@ -58,15 +59,18 @@
 
 
 					<tr class=''>
-						<td scope='row'>$idPedido</td>
-						<td>$dataEntrega</td>
-						<td>$hora</td>
-						<td>$endereco</td>
-						<td>$quantidadePedido</td>
-						<td>$valorPedido</td>
+						<td scope='row'>${pedido.getIdPedido()}</td>
+						<td>${pedido.getNomeProduto()}</td>
+						<td>${pedido.getDataEntrega()}</td>
+						<td>${pedido.getHora()}</td>
+						<td>${pedido.getEndereco()}</td>
+						<td>${pedido.getQuantidadePedido()}</td>
+						<td>${pedido.getValorPedido()}</td>
+
+						<td>${pedido.getFormaPagamento()}</td>
+						<td>${pedido.getTroco()}</td>
+
 						<td>
-
-
 							<button type='button' class='btn btn-outline-success '
 								data-bs-toggle='modal' data-bs-target='#edit$idPedido'>
 								<i class='bi bi-pencil'></i> <span>Editar Pedido</span>

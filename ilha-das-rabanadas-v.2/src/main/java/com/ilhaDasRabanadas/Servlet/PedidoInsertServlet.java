@@ -51,6 +51,8 @@ public class PedidoInsertServlet extends HttpServlet {
 		String endereco = request.getParameter("endereco");
 		String dataEntrega = request.getParameter("dataEntrega");
 		String hora = request.getParameter("hora");
+		String troco = request.getParameter("troco");
+		String formaPagamento = request.getParameter("flexRadioDefault");
 		try {
 			Pedido pedido = new Pedido();
 			pedido.setIdCliente(idCliente);
@@ -60,9 +62,11 @@ public class PedidoInsertServlet extends HttpServlet {
 			pedido.setEndereco(endereco);
 			pedido.setDataEntrega(dataEntrega);
 			pedido.setHora(hora);
+			pedido.setFormaPagamento(formaPagamento);
+			pedido.setTroco(troco);
 			PedidoDao pedidoDao = new PedidoDao();
 			pedidoDao.insert(pedido);
-			response.sendRedirect("/Cliente/meusPedidos.jsp");
+			response.sendRedirect("./Cliente/meusPedidos.jsp");
 		} catch (Exception e) {
 			System.out.println("error na servlet");
 			System.out.println(e.getMessage());

@@ -90,6 +90,7 @@ input[type=number] {
 
 
 	<%
+
 	Integer id = (Integer) session.getAttribute("id");
 	SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
 	Date dataAtual = new Date();
@@ -104,16 +105,17 @@ input[type=number] {
 		request.setAttribute("produto", produto);
 		String data = formatador.format(dataAtual);
 		request.setAttribute("data", data);
-
+		out.println(produto.getImagem());
 	}
+
 	%>
 	<!-- Bootstrap JavaScript Libraries -->
 
 
-	
+
 	<jsp:include page="../Headers/headerCliente.jsp"></jsp:include>
-	
-	
+
+
 	<main class="my-5">
 
 
@@ -173,15 +175,33 @@ input[type=number] {
 								</div>
 								<div class="mb-3">
 									<label class=" mb-2 form-label" for="">Data de entrega</label>
-									<input type="date" min="${data}" name="dataEntrega" id="dataEntrega"
-										class="form-control"  required>
+									<input type="date" min="${data}" name="dataEntrega"
+										id="dataEntrega" class="form-control" required>
 								</div>
 								<div class="mb-3">
 									<label class=" mb-2 form-label" for="hora da entrega">Hora
 										da entrega</label> <input type="time" id="" min="08:00" max="20:00"
 										name="hora" class="form-control" required>
 								</div>
-
+								<div>
+								<p>Forma de Pagamento</p>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" value="cartao"
+										name="flexRadioDefault" id="flexRadioDefault1"> <label
+										class="form-check-label" for="flexRadioDefault1">
+										Cartão ou pix </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" value="dinheiro"
+										name="flexRadioDefault" id="flexRadioDefault2" checked>
+									<label class="form-check-label" for="flexRadioDefault2">
+										Dinheiro </label>
+								</div>
+								</div>
+								<div>
+									<p>Precisará de troco? Para quanto?</p>
+									<input type="text" value="" name="troco" class="form-control">
+								</div>
 							</div>
 						</div>
 					</div>
