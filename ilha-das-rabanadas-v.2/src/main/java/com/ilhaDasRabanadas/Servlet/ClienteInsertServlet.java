@@ -89,20 +89,14 @@ public class ClienteInsertServlet extends HttpServlet {
 		cliente.setBairro(bairro);
 
 		try {
-			//registrando o cliente
+			// registrando o cliente
 			ClienteDao clienteDao = new ClienteDao();
 			ClienteDao.register(cliente);
-//realizando a autenticação para fazer o login automatico
-		
-			Login login1 = LoginDao.Authentication(email, password);
-			int id = login1.getIdLogin();
 
-			session.setAttribute("id", id);
-			response.sendRedirect("./Cliente/Dashboard.jsp");
+			response.sendRedirect("../Cliente/Dashboard.jsp");
 		} catch (Exception e) {
 
-			System.out.println("errora");
-			System.out.println(e);
+			response.sendRedirect("./Cliente/Dashboard.jsp");
 		}
 
 	}

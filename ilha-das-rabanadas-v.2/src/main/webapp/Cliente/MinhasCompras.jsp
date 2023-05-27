@@ -1,5 +1,15 @@
+
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ page import="com.ilhaDasRabanadas.bean.Cliente"%>
+
+<%@ page import="com.ilhaDasRabanadas.dao.ClienteDao"%>
+<%@ page import="com.ilhaDasRabanadas.bean.Produto"%>
+
+<%@ page import="com.ilhaDasRabanadas.dao.ProdutoDao"%>
+
+
 
 <!doctype html>
 <html lang="pt-br">
@@ -77,6 +87,16 @@ input[type=number] {
 <body>
 
 
+	<%
+	
+	Produto produto = ProdutoDao.getElementById(request.getParameter("id"));
+	request.setAttribute("produto", produto);
+	
+	Integer id = (Integer) session.getAttribute("id");
+	Cliente cliente = ClienteDao.getElementByIdLogin(id);
+	request.setAttribute("cliente", cliente);
+	%>
+
 	<!-- Bootstrap JavaScript Libraries -->
 
 
@@ -96,8 +116,11 @@ input[type=number] {
 
 		<section class="container  flex-column p-4">
 			<form action="../pedido/insert" method="POST">
-				<input type="hidden" name="idCliente" value=""> <input
-					type="hidden" name="nomeProduto" value="">
+
+				<input type="hidden" name="idCliente"
+					value=" ${cliente.getIdCliente()}"> <input type="hidden"
+					name="idProduto" value="${produto.getIdProduto()}">
+
 				<div class="card   mb-3">
 					<div class="row  align-items-center g-0">
 						<div class="col">
@@ -145,7 +168,7 @@ input[type=number] {
 										da entrega</label> <input type="time" id="" min="08:00" max="20:00"
 										name="hora" class="form-control" required>
 								</div>
-							
+
 							</div>
 						</div>
 					</div>

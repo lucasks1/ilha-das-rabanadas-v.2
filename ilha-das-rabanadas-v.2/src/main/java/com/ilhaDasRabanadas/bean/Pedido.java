@@ -2,30 +2,16 @@ package com.ilhaDasRabanadas.bean;
 
 public class Pedido {
 	protected int idPedido;
-	protected int idCliente;
-	public String nomeProduto;
 	public String dataEntrega;
 	public String hora;
 	public String valorPedido;
-	public String quantidadePedido;	
+	public String quantidadePedido;
+	public Cliente cliente;
+	public Produto produto;
 	public String endereco;
-
-
+	public String formaPagamento;
 	public int getIdPedido() {
 		return idPedido;
-	}
-	public int getIdCliente() {
-		return idCliente;
-	}
-	public void setIdCliente(int idCliente) {
-		this.idCliente = idCliente;
-	}
-	
-	public String getNomeProduto() {
-		return nomeProduto;
-	}
-	public void setNomeProduto(String nomeProduto) {
-		this.nomeProduto = nomeProduto;
 	}
 	public void setIdPedido(int idPedido) {
 		this.idPedido = idPedido;
@@ -54,16 +40,42 @@ public class Pedido {
 	public void setQuantidadePedido(String quantidadePedido) {
 		this.quantidadePedido = quantidadePedido;
 	}
-	
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	public Produto getProduto() {
+		return produto;
+	}
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
 	public String getEndereco() {
 		return endereco;
 	}
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-
+	public String getFormaPagamento() {
+		return formaPagamento;
+	}
+	public void setFormaPagamento(String formaPagamento) {
+		this.formaPagamento = formaPagamento;
+	}
 	
-
+	public Pedido(int idPedido,String dataEntrega,String hora,String valorPedido,String quantidadePedido,Cliente cliente,Produto produto,String endereco,String formaPagamento) {
+		this.idPedido = idPedido;
+		this.dataEntrega = dataEntrega;
+		this.hora = hora;
+		this.valorPedido = valorPedido;
+		this.quantidadePedido = quantidadePedido;
+		this.cliente = cliente;
+		this.produto = produto;
+		this.endereco = endereco;
+		this.formaPagamento = formaPagamento;
+	}
 	
 
 }
